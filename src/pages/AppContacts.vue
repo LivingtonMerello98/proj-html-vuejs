@@ -1,11 +1,11 @@
 <script>
 export default {
-    name: "AppHome"
+    name: "AppContacts"
 }
 </script>
 
 <template>
-    <h1>AppHome di livington</h1>
+    <h1>AppContacts di Vincenzo</h1>
 </template>
 
 <style></style>
