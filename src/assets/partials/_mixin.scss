@@ -1,0 +1,72 @@
+@use './variables' as *;
+
+//buttons 
+
+//button from primary to grey in hover
+@mixin btn-primary-to-secondary {
+    background-color: $custom-primary-color ;
+    color: #ffff;
+    padding: $custom-btn-padding;
+    border-radius: $custom-btn-border-radius;
+    font-weight: 500;
+
+    &:hover {
+        color: #ffff;
+        background-color: $custom-secondary-color;
+    }
+}
+
+//button from primary to white in hover
+@mixin btn-primary-to-white {
+    background-color: $custom-primary-color;
+    color: #ffff;
+    padding: $custom-btn-padding;
+    border-radius: $custom-btn-border-radius;
+    font-weight: 500;
+
+    &:hover {
+        color: $custom-secondary-color;
+        background-color: #ffff;
+    }
+}
+
+
+//button from border 1px white to bg-white in hover
+@mixin btn-border-to-white {
+    border: 1px solid white;
+    color: #ffff;
+    padding: $custom-btn-padding;
+    border-radius: $custom-btn-border-radius;
+    background-color: #ffffff00;
+    font-weight: 500;
+
+    &:hover {
+        color: $custom-secondary-color;
+        background-color: white;
+        border: 0px;
+    }
+}
+
+//paragraph
+
+//paragraph thin
+
+@mixin paragraph-thin {
+    font-size: 16px;
+    font-weight: 300;
+    color: $custom-color-thin-paragraph;
+}
+
+//paragraph thin
+
+@mixin paragraph-bold {
+    font-size: 16px;
+    font-weight: 700;
+    color: $custom-secondary-color;
+}
+
+@mixin title-section {
+    font-size: $custom-title-section-size;
+    font-weight: 800;
+    color: $custom-color-title-paragraph;
+}
