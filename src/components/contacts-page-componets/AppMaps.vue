@@ -18,6 +18,8 @@ export default {
             </div>
         </div>
     </section>
+
+    <h1>ciao</h1>
 </template>
 
 <style></style>
