@@ -1,15 +1,18 @@
 <script>
 
+import UniversalHeader from '../components/AppUniversalHeader.vue'
+
 export default {
-    name: "AppAbout"
+    name: "AppAbout",
+    components: {
+        UniversalHeader,
+    },
 }
 </script>
 
 <template>
-    <h1>ciao sono about di danilo</h1>
-    <p>ciao mondo</p>
+    <UniversalHeader/>
 
-    <i class="fa-solid fa-phone"></i>
 </template>
 
 
