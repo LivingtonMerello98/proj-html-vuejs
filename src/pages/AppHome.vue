@@ -17,7 +17,8 @@ export default {
         animi accusamus alias eaque cupiditate. Est quas iste unde laboriosam repudiandae dolorem eum recusandae officiis
         placeat?
     </p>
-    <font-awesome-icon :icon="['fas', 'phone']" />
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-brands fa-facebook"></i>
     <p class="title-section">title-section
     </p>
     <p class="sub-title-l">sub-title-l
