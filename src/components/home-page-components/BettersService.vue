@@ -13,6 +13,7 @@ export default {
                     <div class="text text-center py-5">
                         <h2 class="title-m mb-5">Yacht Charters, Repairs<br>& Transportation, US-wide!</h2>
                         <button class="btn-primary-to-white mb-5">More Details</button>
+                        <h3>ciao mondo</h3>
                     </div>
                 </div>
             </div>
