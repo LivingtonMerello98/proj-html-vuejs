@@ -11,7 +11,7 @@ export default {
             <div class="row">
                 <div class="col-6  py-4"></div>
                 <div class="col-6 bg-primary">
-                    <h1 class="sub-title-s">lorem ipsum</h1>
+                    <h1 class="sub-title-s">Our History</h1>
                 </div>
             </div>
         </div>
@@ -19,13 +19,16 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use 'src/assets/partials/mixin' as*;
+@use 'src/assets/partials/variables' as*;
+
 .bg-image {
     background-image: url('https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/bg4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
     .sub-title-s {
-        @include sub-title-s
+        @include title-s
     }
 
 }
