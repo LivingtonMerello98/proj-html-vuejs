@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <section class="bg-image">
+    <section class="bg-image h-100">
         <div class="container py-5">
             <div class="row">
                 <div class="col-12 py-5">

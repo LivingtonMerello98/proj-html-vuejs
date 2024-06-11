@@ -2,7 +2,8 @@
 import OurHistory from '../components/home-page-components/OurHistory.vue';
 import BettersService from '../components/home-page-components/BettersService.vue';
 import Services from '../components/home-page-components/Services.vue';
-import OurYachts from '../components/home-page-components/OurYachts.vue'
+import OurYachts from '../components/home-page-components/OurYachts.vue';
+import WorldRallly from '../components/home-page-components/WorldRallly.vue';
 
 
 
@@ -13,7 +14,8 @@ export default {
         OurHistory,
         BettersService,
         Services,
-        OurYachts
+        OurYachts,
+        WorldRallly
     }
 }
 </script>
@@ -23,6 +25,7 @@ export default {
     <BettersService />
     <Services />
     <OurYachts />
+    <WorldRallly />
 </template>
 
 <style lang="scss" scoped>
