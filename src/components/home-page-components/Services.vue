@@ -52,7 +52,7 @@ export default {
                 <div class="content">
                     <div class="row">
                         <!-- card -->
-                        <div class="col-4 py-3 mb-5" v-for="(service, index) in services">
+                        <div class="col-4 py-3 mb-5" v-for="(service, index) in services" :key="service.index">
                             <div class="title mb-5">
                                 <span class="custom-primary-color" v-html="service.icon">
                                 </span>
