@@ -10,16 +10,23 @@ export default {
             <div class="row">
                 <div class="col-4">
                     <div>
-                        <h2 class="mt-5">Contacts</h2>
+                        <h2>Contacts</h2>
                         <div class="mt-3">
                             <p><Strong>Address:</Strong> 11559 Ventura Boulevard, Studio City, CA 91604</p>
                             <p><Strong>Phone:</Strong><a href="/"> 555.748.6051</a></p>
                             <p><Strong>Fax:</Strong><a href="/"> 555.748.6051</a></p>
                             <p><Strong>E-mail:</Strong><a href="/"> quickwind@demolink.org</a></p>
+                            <div class="d-flex gap-3">
+                                <a href=""><i class="fab fa-facebook-f custom-primary-color"></i></a>
+                                <a href=""><i class="fab fa-twitter custom-primary-color"></i></a>
+                                <a href=""><i class="fab fa-instagram custom-primary-color"></i></a>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
-                <div class="col-8 mt-5">
+                <div class="col-8 mb-5">
                     <h2>Sends us a message</h2>
                     <form>
                         <div class="mb-3 mt-3">
@@ -53,7 +60,7 @@ export default {
                             </label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                        <button type="submit" class="btn-primary-to-secondary">Submit</button>
                     </form>
                 </div>
             </div>
@@ -62,6 +69,10 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use 'src/assets/partials/mixin' as*;
+@use 'src/assets/partials/variables' as*;
+
+
 a {
     color: #86CCFF;
     text-decoration: none;
@@ -70,5 +81,13 @@ a {
 
 p {
     font-size: 20px;
+}
+
+.btn-primary-to-secondary {
+    @include btn-primary-to-secondary
+}
+
+.custom-primary-color {
+    color: $custom-primary-color;
 }
 </style>
