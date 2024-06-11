@@ -1,10 +1,18 @@
 <script>
+import OurHistory from '../components/home-page-components/OurHistory.vue';
 export default {
-    name: "AppHome"
+    name: "AppHome",
+
+    components: {
+        OurHistory
+    }
 }
 </script>
 
-<template></template>
+<template>
+    <h1>Sei in Home</h1>
+    <OurHistory />
+</template>
 
 <style lang="scss" scoped>
 @use '../assets/partials/mixin' as *;
