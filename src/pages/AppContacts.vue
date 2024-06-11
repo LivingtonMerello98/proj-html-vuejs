@@ -6,6 +6,7 @@ export default {
 
 <template>
     <h1>AppContacts di Vincenzo</h1>
+    <i class="fa-solid fa-star"></i>
 </template>
 
 <style></style>
