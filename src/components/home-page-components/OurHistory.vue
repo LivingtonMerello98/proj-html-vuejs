@@ -5,7 +5,6 @@ export default {
 </script>
 
 <template>
-    <h1>sono our history</h1>
     <section class="bg-image py-4">
         <div class="container">
             <div class="row">
