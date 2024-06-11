@@ -1,6 +1,7 @@
 <script>
 import OurHistory from '../components/home-page-components/OurHistory.vue';
 import BettersService from '../components/home-page-components/BettersService.vue';
+import Services from '../components/home-page-components/Services.vue';
 
 
 export default {
@@ -8,15 +9,16 @@ export default {
 
     components: {
         OurHistory,
-        BettersService
+        BettersService,
+        Services
     }
 }
 </script>
 
 <template>
-    <h1>Sei in Home</h1>
     <OurHistory />
     <BettersService />
+    <Services />
 </template>
 
 <style lang="scss" scoped>
