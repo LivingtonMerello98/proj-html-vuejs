@@ -19,17 +19,23 @@ export default {
     </p>
     <p class="title-section">title-section
     </p>
-    <hr>
     <p class="sub-title-l">sub-title-l
     </p>
     <p class="sub-title-m">sub-title-m
     </p>
     <p class="sub-title-s">sub-title-s
     </p>
-    <div style="background-color: black; padding: 1rem;">
+    <div style="background-color: rgb(79, 79, 79); padding: 1rem; margin: 1rem;">
         <button class="btn mx-2">click</button>
         <button class="btn-2 mx-1">click</button>
         <button class="btn-3 mx-1">click</button>
+    </div>
+    <div style="background-color: rgb(29, 29, 29); padding:1rem;">
+        <p class="sub-title-s">title s </p>
+        <p class="title-s">title s </p>
+        <p class="title-m">title m </p>
+        <p class="title-l">title l </p>
+        <p class="title-xl">title-xl </p>
     </div>
 </template>
 
@@ -71,5 +77,32 @@ export default {
 
 .sub-title-s {
     @include sub-title-s
+}
+
+
+
+
+
+
+
+.sub-title-s {
+    @include sub-title-s
+}
+
+.title-s {
+    @include title-s
+}
+
+.title-m {
+    @include title-m
+}
+
+.title-l {
+    @include title-l
+}
+
+
+.title-xl {
+    @include title-xl
 }
 </style>
