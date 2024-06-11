@@ -6,26 +6,32 @@ export default {
         return {
             services: [
                 {
+                    icon: '<i class="fa-solid fa-anchor"></i>',
                     title: 'Yatch rentals',
                     text: 'With more than two hundred yacht and boat models on our fleet and both the East and the West coasts covered, we are able to offer you the best yacht chartering options.'
                 },
                 {
+                    icon: '<i class="fa-regular fa-user"></i>',
                     title: 'Management',
                     text: 'On par with providing an amazing range of rentals on boats and yachts of all sizes and comfort levels, we will also gladly pick up on providing all kinds of maintenance…'
                 },
                 {
+                    icon: '<i class="fa-solid fa-car"></i>',
                     title: 'Transportation',
                     text: 'Whenever any of our clients wants to try some brand new sailing destination or make a  place of residence move to another water area – there comes the issue of logistics.'
                 },
                 {
+                    icon: '<i class="fa-regular fa-star"></i>',
                     title: 'Yacht Repair',
                     text: 'With decades of professional experience in renting, repairing and transporting just all kinds of yachts and boats under our belt – we can assure you that we are your best choice!'
                 },
                 {
+                    icon: '<i class="fa-regular fa-thumbs-up"></i>',
                     title: 'Yacht Upgrades',
                     text: 'As far as any personally-owned vehicles are concerned, whether we are talking about cars with four wheels, bikes with two wheels or yachts with no wheels, owners do…'
                 },
                 {
+                    icon: '<i class="fa-solid fa-briefcase"></i>',
                     title: 'Corporate Events',
                     text: 'When it comes to organizing a corporate yacht charter of a Fortune 500 scale for a big crew of people – we will be able to make it flawless.We will exceed your expectations!'
                 }
@@ -46,14 +52,13 @@ export default {
                 <div class="content">
                     <div class="row">
                         <!-- card -->
-                        <div class="col-4 py-3" v-for="(service, index) in services">
-                            <div class="title mb-3">
-                                <span class="custom-primary-color">
-                                    <i class="fa-solid fa-anchor"></i>
+                        <div class="col-4 py-3 mb-5" v-for="(service, index) in services">
+                            <div class="title mb-5">
+                                <span class="custom-primary-color" v-html="service.icon">
                                 </span>
-                                <span class="sub-title-l">{{ service.title }}</span>
+                                <span class="sub-title-l mx-3">{{ service.title }}</span>
                             </div>
-                            <div class="text">
+                            <div class="text paragraph-thin">
                                 <p>{{ service.text }}</p>
                             </div>
                         </div>
@@ -86,6 +91,10 @@ export default {
 
     .sub-title-l {
         @include sub-title-l
+    }
+
+    .paragraph-thin {
+        @include paragraph-thin
     }
 
 }
