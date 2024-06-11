@@ -6,14 +6,6 @@ export default {
 
 <template>
     <h1>AppHome di livington</h1>
-    <p>lorem ipsum</p>
-    <ul>
-        <li class="">item</li>
-        <li class="">item</li>
-        <li class="">item</li>
-        <li class="">item</li>
-        <li class="">item</li>
-    </ul>
     <hr>
     <p class="paragraph-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consequatur excepturi
         debitis natus eligendi
@@ -25,15 +17,19 @@ export default {
         animi accusamus alias eaque cupiditate. Est quas iste unde laboriosam repudiandae dolorem eum recusandae officiis
         placeat?
     </p>
-    <p class="title-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consequatur excepturi
-        debitis natus eligendi
-        animi accusamus alias eaque cupiditate. Est quas iste unde laboriosam repudiandae dolorem eum recusandae officiis
-        placeat?
+    <p class="title-section">title-section
+    </p>
+    <hr>
+    <p class="sub-title-l">sub-title-l
+    </p>
+    <p class="sub-title-m">sub-title-m
+    </p>
+    <p class="sub-title-s">sub-title-s
     </p>
     <div style="background-color: black; padding: 1rem;">
-        <button class="btn">click</button>
-        <button class="btn-2">click</button>
-        <button class="btn-3">click</button>
+        <button class="btn mx-2">click</button>
+        <button class="btn-2 mx-1">click</button>
+        <button class="btn-3 mx-1">click</button>
     </div>
 </template>
 
@@ -63,5 +59,17 @@ export default {
 
 .title-section {
     @include title-section
+}
+
+.sub-title-l {
+    @include sub-title-l
+}
+
+.sub-title-m {
+    @include sub-title-m
+}
+
+.sub-title-s {
+    @include sub-title-s
 }
 </style>
