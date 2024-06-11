@@ -17,6 +17,7 @@ export default {
         animi accusamus alias eaque cupiditate. Est quas iste unde laboriosam repudiandae dolorem eum recusandae officiis
         placeat?
     </p>
+    <font-awesome-icon :icon="['fas', 'phone']" />
     <p class="title-section">title-section
     </p>
     <p class="sub-title-l">sub-title-l
