@@ -1,10 +1,14 @@
 <script>
 import OurHistory from '../components/home-page-components/OurHistory.vue';
+import BettersService from '../components/home-page-components/BettersService.vue';
+
+
 export default {
     name: "AppHome",
 
     components: {
-        OurHistory
+        OurHistory,
+        BettersService
     }
 }
 </script>
@@ -12,6 +16,7 @@ export default {
 <template>
     <h1>Sei in Home</h1>
     <OurHistory />
+    <BettersService />
 </template>
 
 <style lang="scss" scoped>
