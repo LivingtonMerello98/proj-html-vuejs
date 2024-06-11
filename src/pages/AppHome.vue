@@ -28,7 +28,7 @@ export default {
     <div style="background-color: rgb(79, 79, 79); padding: 1rem; margin: 1rem;">
         <button class="btn mx-2">click</button>
         <button class="btn-2 mx-1">click</button>
-        <button class="btn-3 mx-1">click</button>
+        <button class="btn-3 mx-1">send</button>
     </div>
     <div style="background-color: rgb(29, 29, 29); padding:1rem;">
         <p class="sub-title-s">title s </p>
