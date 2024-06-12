@@ -13,7 +13,9 @@
         <div class="row">
             <div class="col-12 d-flex">
                 <div class="logo-header">
-                    <img src="/public/img/logo.webp" alt="">
+                    <a href="#">
+                        <img src="/src/img/logo.webp" alt="">
+                    </a> 
                 </div>
                 <div class="nav-pages">
                     <ul class="d-flex">
@@ -45,6 +47,25 @@
         </div>
     </div>
     </div>
+    
+    <!-- HOME | ABOUT -->
+     
+    <div class="home-about py-3">
+        <div class="container">
+            <span>
+                <a href="#">Home</a>
+            </span>
+            <span class="vl">
+                |
+            </span>
+            <span>
+                <a href="#">About</a>
+            </span>
+            <span>
+                <a href="#">Contacts</a>
+            </span>
+        </div>
+    </div>
 
 </template>
 
@@ -53,6 +74,7 @@
 @use 'src/assets/partials/variables' as *;
 
     .header-about-contacts{
+        width: 100%;
         background-color: $custom-secondary-color
     }
 
@@ -61,11 +83,17 @@
         height: auto;
     }
 
+    .nav-pages{
+        color: white;
+    }
+
     .research{
         color: $custom-color-title-section
     }
-    
-    .nav-pages{
-    
+
+    a{
+        text-decoration: none;
+        color: currentColor;
     }
+    
 </style>

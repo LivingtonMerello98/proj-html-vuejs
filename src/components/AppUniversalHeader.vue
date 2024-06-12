@@ -31,11 +31,11 @@ export default {
 </div>
 <div class="left-side">
     <div class="address">
-        <span><i class="fa-solid fa-location-dot"></i></span>
+        <span> <i class="fa-solid fa-location-dot map-location-icon"></i></span>
         <span>7087 Richmond hwy, Alexandria, VA</span>
     </div>
     <div class="telephone-contact">
-        <span><i class="fa-solid fa-phone"></i></span>
+        <span><i class="fa-solid fa-phone phone-icon"></i></span>
         <span>800-2345-6789</span>
     </div>
 </div>
@@ -63,7 +63,9 @@ export default {
 
 </template>
 
-<style>
+<style lang="scss" scoped>
+
+@use 'src/assets/partials/variables' as *;
 
     .widget-container{
         background-color: red;
@@ -91,4 +93,11 @@ export default {
         padding-right: 15px;
     }
 
+    .map-location-icon{
+        color: $custom-primary-color
+    }
+
+    .phone-icon{
+        color: $custom-primary-color
+    }
 </style>
