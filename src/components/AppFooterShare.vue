@@ -8,39 +8,43 @@ export default {
     <section class="color-share">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-md-3 col-12 mb-4 mb-md-0 text-md-left">
+                <div class="col-md-4 col-12 mb-4 mb-md-0 text-md-left">
                     <img src="https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/logo.png"
                         alt="" class="img-fluid">
-                    <p class="fs-">Yacht rentals for people who love sailing across the seas…</p>
+                    <p class="fs-">Yacht rentals for people who love <br> sailing across the seas…</p>
                 </div>
-                <div class="col-md-3 col-12 mb-4 mb-md-0">
-                    <ul class="list-unstyled text-md-left fw-bolder">
-                        <li class="py-2">
-                            <a href="#" class="fw-bold costum-font-size">YACHTS</a>
-                        </li>
-                        <li class="py-2">
-                            <a href="#" class="fw-bold costum-font-size">SERVICES</a>
-                        </li>
-                        <li class="py-2">
-                            <a href="#" class="fw-bold costum-font-size">RESERVATIONS</a>
-                        </li>
-                    </ul>
+                <div class="col-md-4 col-12 mb-4 mb-md-0">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled text-md-left fw-bolder">
+                                <li class="py-2">
+                                    <a href="#" class="fw-bold costum-font-size">YACHTS</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#" class="fw-bold costum-font-size">SERVICES</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#" class="fw-bold costum-font-size">RESERVATIONS</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled text-md-left fw-bolder">
+                                <li class="py-2">
+                                    <a href="#" class="fw-bold costum-font-size">BLOG</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#" class="fw-bold costum-font-size">PRIVACY POLICY</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#" class="fw-bold costum-font-size">TERMS OF USE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3 col-12 mb-4 mb-md-0">
-                    <ul class="list-unstyled text-md-left fw-bolder">
-                        <li class="py-2">
-                            <a href="#" class="fw-bold costum-font-size">BLOG</a>
-                        </li>
-                        <li class="py-2">
-                            <a href="#" class="fw-bold costum-font-size">PRIVACY POLICY</a>
-                        </li>
-                        <li class="py-2">
-                            <a href="#" class="fw-bold costum-font-size">TERMS OF USE</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-12 text-md-left newsletter py-3">
-                    <h2 class="fw-bolder py-5 fw-bold fs-3">Newsletter</h2>
+                <div class="col-md-4 col-12 text-md-left newsletter py-5">
+                    <h2 class="fw-bolder py-2 fw-bold fs-3">Newsletter</h2>
                     <form class="form-inline justify-content-center" @submit.prevent="subscribe">
                         <div class="form-group mb- d-flex">
                             <input type="email" v-model="email" class="form-control" placeholder="Enter your e-mail"
