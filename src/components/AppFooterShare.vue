@@ -11,7 +11,7 @@ export default {
                 <div class="col-md-3 col-12 mb-4 mb-md-0 text-md-left">
                     <img src="https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/logo.png"
                         alt="" class="img-fluid">
-                    <p class="fs-5">Yacht rentals for people who love sailing across the seas…</p>
+                    <p class="fs-">Yacht rentals for people who love sailing across the seas…</p>
                 </div>
                 <div class="col-md-3 col-12 mb-4 mb-md-0">
                     <ul class="list-unstyled text-md-left fw-bolder">
