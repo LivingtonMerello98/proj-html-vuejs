@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-    <section class="bg-image py-4">
-        <div class="container">
+    <section class="bg-image">
+        <div class="container py-5">
             <div class="row">
                 <div class="col-6"></div>
                 <div class="col-6 py-5">
@@ -54,7 +54,7 @@ export default {
     }
 
     .paragraph-bold {
-        @include paragraph-bold
+        @include paragraph-bold;
     }
 
     .paragraph-thin {
