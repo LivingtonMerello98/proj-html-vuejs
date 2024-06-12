@@ -1,17 +1,31 @@
 <script>
 import OurHistory from '../components/home-page-components/OurHistory.vue';
+import BettersService from '../components/home-page-components/BettersService.vue';
+import Services from '../components/home-page-components/Services.vue';
+import OurYachts from '../components/home-page-components/OurYachts.vue';
+import WorldRallly from '../components/home-page-components/WorldRallly.vue';
+
+
+
 export default {
     name: "AppHome",
 
     components: {
-        OurHistory
+        OurHistory,
+        BettersService,
+        Services,
+        OurYachts,
+        WorldRallly
     }
 }
 </script>
 
 <template>
-    <h1>Sei in Home</h1>
     <OurHistory />
+    <BettersService />
+    <Services />
+    <OurYachts />
+    <WorldRallly />
 </template>
 
 <style lang="scss" scoped>

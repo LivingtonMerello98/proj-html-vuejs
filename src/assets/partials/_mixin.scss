@@ -9,7 +9,7 @@
     padding: $custom-btn-padding;
     border-radius: $custom-btn-border-radius;
     border: none;
-    font-weight: 500;
+    font-weight: 700;
 
     &:hover {
         color: #ffff;
@@ -24,7 +24,7 @@
     color: #ffff;
     padding: $custom-btn-padding;
     border-radius: $custom-btn-border-radius;
-    font-weight: 500;
+    font-weight: 700;
 
     &:hover {
         color: $custom-secondary-color;
@@ -40,18 +40,23 @@
     padding: $custom-btn-padding;
     border-radius: $custom-btn-border-radius;
     background-color: #ffffff00;
-    font-weight: 500;
+    font-weight: 700;
 
     &:hover {
         color: $custom-secondary-color;
         background-color: white;
-        border: 0px;
     }
 }
 
 //text secondary-color
 
-//paragraph thin
+
+
+@mixin paragraph-white {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffff;
+}
 
 @mixin paragraph-thin {
     font-size: 16px;
@@ -59,7 +64,6 @@
     color: $custom-color-thin-paragraph;
 }
 
-//paragraph bold
 
 @mixin paragraph-bold {
     font-size: 16px;
@@ -110,6 +114,12 @@
 @mixin title-m {
     font-size: $custom-title-m;
     font-weight: 600;
+    color: #ffff;
+}
+
+@mixin title-thin-m {
+    font-size: $custom-title-m;
+    font-weight: 200;
     color: #ffff;
 }
 

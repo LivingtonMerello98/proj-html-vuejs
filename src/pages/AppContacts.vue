@@ -1,13 +1,21 @@
 <script>
+import AppForm from '../components/contacts-page-componets/AppForm.vue';
+import AppMaps from '../components/contacts-page-componets/AppMaps.vue';
+import AppFooterShare from '../components/contacts-page-componets/AppFooterShare.vue';
 export default {
-    name: "AppContacts"
+    name: "AppContacts",
+    components: {
+        AppForm,
+        AppMaps,
+        AppFooterShare
+    }
 }
 </script>
 
 <template>
-    <h1>AppContacts di Vincenzo</h1>
-    <i class="fa-solid fa-star"></i>
-    <p>ciao mondo </p>
+    <AppMaps></AppMaps>
+    <AppForm></AppForm>
+    <AppFooterShare></AppFooterShare>
 </template>
 
 <style></style>
