@@ -24,7 +24,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8 col-12">
+                <div class="col-md-8 col-12 mb-5">
                     <h2>Sends us a message</h2>
                     <form>
                         <div class="mb-3 mt-3">
@@ -52,13 +52,13 @@ export default {
                             </label>
                             <input type="text" class="form-control" id="subject">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 py-5">
                             <label for="message" class="form-label">
                                 <h3>Your Message</h3>
                             </label>
                             <textarea class="form-control" id="message" rows="10"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn-primary-to-secondary">Submit</button>
                     </form>
                 </div>
             </div>

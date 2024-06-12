@@ -14,7 +14,7 @@ export default {
                     <p>Yacht rentals for people who love sailing across the seas…</p>
                 </div>
                 <div class="col-md-3 col-12 mb-4 mb-md-0">
-                    <ul class="list-unstyled text-center text-md-left">
+                    <ul class="list-unstyled text-md-left">
                         <li>
                             <a href="/">YACHTS</a>
                         </li>
@@ -27,7 +27,7 @@ export default {
                     </ul>
                 </div>
                 <div class="col-md-3 col-12 mb-4 mb-md-0">
-                    <ul class="list-unstyled text-center text-md-left">
+                    <ul class="list-unstyled text-md-left">
                         <li>
                             <a href="/">BLOG</a>
                         </li>
@@ -39,7 +39,7 @@ export default {
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-12 text-center text-md-left newsletter text-center">
+                <div class="col-md-3 col-12 text-md-left newsletter">
                     <h2>Newsletter</h2>
                     <form class="form-inline justify-content-center" @submit.prevent="subscribe">
                         <div class="form-group mb-2 d-flex">
