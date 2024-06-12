@@ -29,8 +29,12 @@ export default {
     <div class="container py-5">
         <div class="row">
             <div class="col-12 text-center py-5">
-                <h2 class="title-section mb-5">Yachtsmen's Blog</h2>
-                <hr>
+                <h2 class="title-section mb-2">Yachtsmen's Blog</h2>
+
+                <div class="col-12  my-5" style="background-color: rgba(0, 0, 0, 0.037);">
+                    <div class="col-1" style="height: 1px; background-color:#6EC1E4; margin: 0 auto;">
+                    </div>
+                </div>
             </div>
             <div class="col-lg-4 col-12 text-center mb-5" v-for="(post, index) in posts" :key="index">
                 <div class="img-content">
