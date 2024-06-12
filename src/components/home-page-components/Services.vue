@@ -1,7 +1,33 @@
+<template>
+    <section class="parallax">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="title-section mb-5">Services</h2>
+                </div>
+                <hr class="mb-5">
+                <div class="content">
+                    <div class="row">
+                        <!-- card -->
+                        <div class="col-4 py-3 mb-5" v-for="(service, index) in services" :key="service.index">
+                            <div class="title mb-5">
+                                <span class="custom-primary-color" v-html="service.icon"></span>
+                                <span class="sub-title-l mx-3">{{ service.title }}</span>
+                            </div>
+                            <div class="text paragraph-thin">
+                                <p>{{ service.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
 <script>
 export default {
     name: 'Services',
-
     data() {
         return {
             services: [
@@ -37,65 +63,65 @@ export default {
                 }
             ]
         }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.parallaxEffect);
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.parallaxEffect);
+    },
+    methods: {
+        parallaxEffect() {
+            let scrollPosition = window.pageYOffset;
+            let parallax = document.querySelector('.parallax');
+            parallax.style.backgroundPositionY = scrollPosition * 0.1 + 'px'; // Regola la velocità del parallasse
+        }
     }
 }
 </script>
-
-<template>
-    <section class="bg-image">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="title-section mb-5">Services</h2>
-                </div>
-                <hr class="mb-5">
-                <div class="content">
-                    <div class="row">
-                        <!-- card -->
-                        <div class="col-4 py-3 mb-5" v-for="(service, index) in services" :key="service.index">
-                            <div class="title mb-5">
-                                <span class="custom-primary-color" v-html="service.icon">
-                                </span>
-                                <span class="sub-title-l mx-3">{{ service.title }}</span>
-                            </div>
-                            <div class="text paragraph-thin">
-                                <p>{{ service.text }}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</template>
 
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;
 @use 'src/assets/partials/variables' as*;
 
-.bg-image {
+
+.custom-primary-color {
+    background-color: $custom-primary-color ;
+    color: white;
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+.title-section {
+    @include title-section
+}
+
+.sub-title-l {
+    @include sub-title-l
+}
+
+.paragraph-thin {
+    @include paragraph-thin
+}
+
+.parallax {
+    position: relative;
     background-image: url('https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/bg6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    background-color: #F8F9FE;
+    /* Altezza dell'immagine di sfondo */
 
-    .custom-primary-color {
-        background-color: $custom-primary-color ;
-        color: white;
-        border-radius: 100%;
-        padding: 1rem;
+    /* Aggiungi altre regole di stile secondo necessità */
+
+    .container {
+        position: relative;
+        /* Assicura che il contenuto rimanga all'interno del parallasse */
+        z-index: 2;
+        /* Assicura che il contenuto sia sopra l'immagine di sfondo */
     }
-
-    .title-section {
-        @include title-section
-    }
-
-    .sub-title-l {
-        @include sub-title-l
-    }
-
-    .paragraph-thin {
-        @include paragraph-thin
-    }
-
 }
 </style>
