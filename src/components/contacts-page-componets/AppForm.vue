@@ -27,32 +27,32 @@ export default {
                 <div class="col-md-8 col-12 mb-5">
                     <h2>Sends us a message</h2>
                     <form>
-                        <div class="mb-3 mt-3">
+                        <div class="mb-3 py-3">
                             <label for="fullName" class="form-label">
                                 <h3>Full name</h3>
                             </label>
                             <input type="text" class="form-control" id="fullName">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 py-3">
                             <label for="email" class="form-label">
                                 <h3>E-mail</h3>
                             </label>
                             <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">.</div>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 py-3">
                             <label for="company" class="form-label">
                                 <h3>Company</h3>
                             </label>
                             <input type="text" class="form-control" id="company">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 py-3">
                             <label for="subject" class="form-label">
                                 <h3>Subject</h3>
                             </label>
                             <input type="text" class="form-control" id="subject">
                         </div>
-                        <div class="mb-3 py-5">
+                        <div class="mb-3 py-3">
                             <label for="message" class="form-label">
                                 <h3>Your Message</h3>
                             </label>
@@ -61,6 +61,7 @@ export default {
                         <button type="submit" class="btn-primary-to-secondary">Submit</button>
                     </form>
                 </div>
+
             </div>
         </div>
     </section>

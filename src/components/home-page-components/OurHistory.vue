@@ -11,7 +11,7 @@ export default {
                 <div class="col-6"></div>
                 <div class="col-6 py-5">
                     <div class="text col-11">
-                        <h1 class="sub-title-s mb-5">Our History</h1>
+                        <h1 class="title-section mb-5">Our History</h1>
                         <!-- hr provvisorio -->
                         <hr class="my-5">
                         <p class="paragraph-bold mb-5">
@@ -45,8 +45,8 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
 
-    .sub-title-s {
-        @include sub-title-s
+    .title-section {
+        @include title-section
     }
 
     .btn-primary-to-secondary {

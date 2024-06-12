@@ -31,6 +31,8 @@ export default {
 
 .bg-image {
     background-image: url('https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/bg7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .title-xl {
         @include title-xl

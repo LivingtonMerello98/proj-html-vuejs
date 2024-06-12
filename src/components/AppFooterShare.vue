@@ -7,7 +7,7 @@ export default {
 <template>
     <section class="color-share">
         <div class="container py-5">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-3 col-12 mb-4 mb-md-0 text-md-left">
                     <img src="https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/logo.png"
                         alt="" class="img-fluid">
@@ -15,32 +15,32 @@ export default {
                 </div>
                 <div class="col-md-3 col-12 mb-4 mb-md-0">
                     <ul class="list-unstyled text-md-left fw-bolder">
-                        <li>
+                        <li class="py-3">
                             <a href="/">YACHTS</a>
                         </li>
-                        <li>
+                        <li class="py-2">
                             <a href="/">SERVICES</a>
                         </li>
-                        <li>
+                        <li class="py-2">
                             <a href="/">RESERVATIONS</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-12 mb-4 mb-md-0">
                     <ul class="list-unstyled text-md-left fw-bolder">
-                        <li>
+                        <li class="py-2">
                             <a href="/">BLOG</a>
                         </li>
-                        <li>
+                        <li class="py-2">
                             <a href="/">PRIVACY POLICY</a>
                         </li>
-                        <li>
+                        <li class="py-2">
                             <a href="/">TERMS OF USE</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-12 text-md-left newsletter">
-                    <h2 class="fw-bolder">Newsletter</h2>
+                <div class="col-md-3 col-12 text-md-left newsletter align-self-center py-3">
+                    <h2 class="fw-bolder py-5">Newsletter</h2>
                     <form class="form-inline justify-content-center" @submit.prevent="subscribe">
                         <div class="form-group mb-2 d-flex">
                             <input type="email" v-model="email" class="form-control" placeholder="Enter your e-mail"
