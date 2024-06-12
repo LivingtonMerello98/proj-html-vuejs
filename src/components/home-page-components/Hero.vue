@@ -53,7 +53,7 @@ export default {
                     </ul>
 
                     <div class="col-md-3 text-end">
-                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-magnifying-glass" style="color: #20C7DF;"></i>
                     </div>
                 </div>
             </header>

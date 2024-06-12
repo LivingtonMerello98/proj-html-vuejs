@@ -58,8 +58,9 @@ export default {
         <div class="container py-5">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="title-section mb-5">Services</h2>
+                    <h2 class="title-section py-3">Services</h2>
                 </div>
+<<<<<<< HEAD
             </div>
             <hr class="mb-5">
             <div class="row">
@@ -71,6 +72,27 @@ export default {
                         </div>
                         <div class="text paragraph-thin">
                             <p>{{ service.text }}</p>
+=======
+
+                <div class="col-12 my-5" style="background-color: rgba(0, 0, 0, 0.068);">
+                    <div class="col-1" style="height: 1px; background-color:#6EC1E4 ; margin:0 auto;">
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="row">
+                        <!-- card -->
+                        <div class="col-4 py-3 mb-5" v-for="(service, index) in services" :key="service.index">
+                            <div class="title d-flex mb-5">
+                                <i class="custom-primary-color" v-html="service.icon"></i>
+
+                                <span class="sub-title-s mx-3">{{ service.title }}</span>
+
+                            </div>
+                            <div class="text paragraph-thin">
+                                <p>{{ service.text }}</p>
+                            </div>
+>>>>>>> 9b06da0dd4a577171d477eb4ce01813261b02d4f
                         </div>
                     </div>
                 </div>
@@ -92,18 +114,21 @@ export default {
     color: white;
     border-radius: 100%;
     padding: 1rem;
+    font-size: 1.5rem;
 }
 
 .title-section {
     @include title-section
 }
 
-.sub-title-l {
-    @include sub-title-l
+.sub-title-s {
+    @include sub-title-s;
+    font-weight: 700;
 }
 
 .paragraph-thin {
-    @include paragraph-thin
+    @include paragraph-thin;
+
 }
 
 .parallax {
@@ -115,15 +140,12 @@ export default {
     background-position: center;
     height: 100%;
     background-color: #F8F9FE;
-    /* Altezza dell'immagine di sfondo */
 
-    /* Aggiungi altre regole di stile secondo necessità */
 
     .container {
         position: relative;
-        /* Assicura che il contenuto rimanga all'interno del parallasse */
         z-index: 2;
-        /* Assicura che il contenuto sia sopra l'immagine di sfondo */
+
     }
 }
 </style>
