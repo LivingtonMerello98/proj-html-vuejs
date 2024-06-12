@@ -60,7 +60,6 @@ export default {
                 <div class="col-12 text-center">
                     <h2 class="title-section py-3">Services</h2>
                 </div>
-<<<<<<< HEAD
             </div>
             <hr class="mb-5">
             <div class="row">
@@ -72,27 +71,6 @@ export default {
                         </div>
                         <div class="text paragraph-thin">
                             <p>{{ service.text }}</p>
-=======
-
-                <div class="col-12 my-5" style="background-color: rgba(0, 0, 0, 0.068);">
-                    <div class="col-1" style="height: 1px; background-color:#6EC1E4 ; margin:0 auto;">
-                    </div>
-                </div>
-
-                <div class="content">
-                    <div class="row">
-                        <!-- card -->
-                        <div class="col-4 py-3 mb-5" v-for="(service, index) in services" :key="service.index">
-                            <div class="title d-flex mb-5">
-                                <i class="custom-primary-color" v-html="service.icon"></i>
-
-                                <span class="sub-title-s mx-3">{{ service.title }}</span>
-
-                            </div>
-                            <div class="text paragraph-thin">
-                                <p>{{ service.text }}</p>
-                            </div>
->>>>>>> 9b06da0dd4a577171d477eb4ce01813261b02d4f
                         </div>
                     </div>
                 </div>
