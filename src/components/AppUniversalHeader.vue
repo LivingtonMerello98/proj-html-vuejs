@@ -11,31 +11,33 @@ export default {
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-8 py-3 d-flex">
+        <div class="col-8 py-2 d-flex">
 
           <!-- INDIRIZZO E NUMERO DI TELEFONO HEADER -->
 
           <div class="address">
             <span>
-                <i class="fa-solid fa-location-dot map-location-icon"></i
-              ></span>
-              <span>7087 Richmond hwy, Alexandria, VA</span>
-          </div> 
+              <i class="fa-solid fa-location-dot map-location-icon"></i>
+            </span>
+            <span class="mx-3 custom-font-size">7087 Richmond hwy, Alexandria, VA</span>
+          </div>
           <div class="telephone-contact mx-5">
             <span><i class="fa-solid fa-phone phone-icon"></i></span>
-              <span>800-2345-6789</span>
+            <span class="mx-3 custom-font-size">800-2345-6789</span>
           </div>
         </div>
-          <div class="col-4 py-3">
-            <div class="social-icon-circle d-flex justify-content-end gap-3">
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-             <a href=""><i class="fa-brands fa-twitter"></i></a>
-             <a href=""><i class="fa-brands fa-instagram"></i></a> 
-            </div>
+        <div class="col-4 d-flex align-items-center justify-content-end">
+          <div class="social-icon-circle ">
+            <a href=""><i class="fa-brands fa-facebook "></i></a>
+            <a href=""><i class="fa-brands fa-twitter mx-4"></i></a>
+            <a href=""><i class="fa-brands fa-instagram "></i></a>
           </div>
+        </div>
+
+
       </div>
     </div>
-   
+
   </section>
 </template>
 
@@ -54,12 +56,16 @@ section {
   color: $custom-primary-color;
 }
 
-a{
+a {
   text-decoration: none;
   color: #849296;
 
-  :hover{
+  :hover {
     color: #20C7DF;
   }
+}
+
+.custom-font-size {
+  font-size: 14px;
 }
 </style>

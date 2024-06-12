@@ -11,9 +11,12 @@ export default {
                 <div class="col-6"></div>
                 <div class="col-6 py-5">
                     <div class="text col-11">
-                        <h1 class="title-section mb-5">Our History</h1>
+                        <h1 class="title-section mb-2">Our History</h1>
                         <!-- hr provvisorio -->
-                        <hr class="my-5">
+                        <div class="col-12 d-flex my-5" style="background-color: rgba(0, 0, 0, 0.068);">
+                            <div class="col-2" style="height: 1px; background-color:#6EC1E4 ;">
+                            </div>
+                        </div>
                         <p class="paragraph-bold mb-5">
                             Founded by a worldwide-famous yacht racer Alfred Tannenstrick, since its inception back in 1977,
                             this company has been a welcoming harbor for all yachting and sailing enthusiasts, from all
@@ -60,7 +63,6 @@ export default {
     .paragraph-thin {
         @include paragraph-thin
     }
-
 }
 </style>
 
