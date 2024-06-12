@@ -7,6 +7,7 @@ import WorldRallly from '../components/home-page-components/WorldRallly.vue';
 import AppFooterShare from '../components/AppFooterShare.vue';
 import blog from '../components/home-page-components/blog.vue';
 import Testimonials from '../components/home-page-components/Testimonials.vue';
+import Hero from '../components/home-page-components/Hero.vue';
 
 
 
@@ -21,13 +22,15 @@ export default {
         WorldRallly,
         AppFooterShare,
         blog,
-        Testimonials
+        Testimonials,
+        Hero
 
     }
 }
 </script>
 
 <template>
+    <Hero />
     <OurHistory />
     <BettersService />
     <Services />
