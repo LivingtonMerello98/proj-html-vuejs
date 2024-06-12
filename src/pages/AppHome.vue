@@ -4,6 +4,7 @@ import BettersService from '../components/home-page-components/BettersService.vu
 import Services from '../components/home-page-components/Services.vue';
 import OurYachts from '../components/home-page-components/OurYachts.vue';
 import WorldRallly from '../components/home-page-components/WorldRallly.vue';
+import AppFooterShare from '../components/AppFooterShare.vue';
 
 
 
@@ -17,6 +18,7 @@ export default {
         Services,
         OurYachts,
         WorldRallly,
+        AppFooterShare
 
     }
 }
@@ -28,6 +30,9 @@ export default {
     <Services />
     <OurYachts />
     <WorldRallly />
+    <footer>
+        <AppFooterShare />
+    </footer>
 </template>
 
 <style lang="scss" scoped>

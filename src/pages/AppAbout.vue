@@ -13,6 +13,9 @@ import AppOurTeam from "../components/about-page-components/AppOurTeam.vue"
 import AppTestimonials from "../components/about-page-components/AppTestimonials.vue"
 import AppFeaturedProjects from "../components/about-page-components/AppFeaturedProjects.vue"
 
+//footer
+import AppFooterShare from "../components/AppFooterShare.vue";
+
 
 export default {
   name: "AppAbout",
@@ -24,7 +27,8 @@ export default {
     AppWhyChooseUs,
     AppOurTeam,
     AppTestimonials,
-    AppFeaturedProjects
+    AppFeaturedProjects,
+    AppFooterShare
   },
 };
 </script>
@@ -42,6 +46,7 @@ export default {
     <AppFeaturedProjects />
   </main>
   <footer>
+    <AppFooterShare />
   </footer>
 </template>
 
