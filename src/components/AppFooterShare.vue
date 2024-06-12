@@ -16,26 +16,26 @@ export default {
                 <div class="col-md-3 col-12 mb-4 mb-md-0">
                     <ul class="list-unstyled text-md-left fw-bolder">
                         <li class="py-2">
-                            <a href="#" class="fw-bold fs-5">YACHTS</a>
+                            <a href="#" class="fw-bold costum-font-size">YACHTS</a>
                         </li>
                         <li class="py-2">
-                            <a href="#" class="fw-bold fs-5">SERVICES</a>
+                            <a href="#" class="fw-bold costum-font-size">SERVICES</a>
                         </li>
                         <li class="py-2">
-                            <a href="#" class="fw-bold fs-5">RESERVATIONS</a>
+                            <a href="#" class="fw-bold costum-font-size">RESERVATIONS</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-12 mb-4 mb-md-0">
                     <ul class="list-unstyled text-md-left fw-bolder">
                         <li class="py-2">
-                            <a href="#" class="fw-bold fs-5">BLOG</a>
+                            <a href="#" class="fw-bold costum-font-size">BLOG</a>
                         </li>
                         <li class="py-2">
-                            <a href="#" class="fw-bold fs-5">PRIVACY POLICY</a>
+                            <a href="#" class="fw-bold costum-font-size">PRIVACY POLICY</a>
                         </li>
                         <li class="py-2">
-                            <a href="#" class="fw-bold fs-5">TERMS OF USE</a>
+                            <a href="#" class="fw-bold costum-font-size">TERMS OF USE</a>
                         </li>
                     </ul>
                 </div>
@@ -107,5 +107,9 @@ a {
 
 .btn-primary-to-secondary {
     @include btn-primary-to-secondary
+}
+
+.costum-font-size {
+    font-size: 16px;
 }
 </style>
