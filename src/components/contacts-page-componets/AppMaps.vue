@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-12 mb-5">
                     <div class="ratio ratio-16x9">

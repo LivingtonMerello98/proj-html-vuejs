@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
     <section>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-4 col-12 mb-4 mb-md-0">
                     <div>

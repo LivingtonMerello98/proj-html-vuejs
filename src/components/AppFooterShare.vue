@@ -6,7 +6,7 @@ export default {
 
 <template>
     <section class="color-share">
-        <div class="container-fluid py-5">
+        <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-md-3 col-12 mb-4 mb-md-0 text-md-left">
                     <img src="https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/logo.png"
@@ -53,7 +53,7 @@ export default {
         </div>
     </section>
     <section class="bt-footer py-3 bg-dark text-light">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div
                     class="col-md-6 col-12 d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start">
