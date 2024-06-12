@@ -32,6 +32,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/partials/mixin' as *;
-@use '../assets/partials/variables' as *;
+@use 'src/assets/partials/mixin' as *;
+@use 'src/assets/partials/variables' as *;
 </style>
