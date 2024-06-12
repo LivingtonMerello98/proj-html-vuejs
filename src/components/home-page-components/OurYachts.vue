@@ -47,9 +47,9 @@ export default {
                         <hr class="mb-3">
                     </div>
                 </div>
-                <div class="col-3 p-3" v-for="yacht in yachts">
+                <div class="col-lg-3 col-md-4 col-sm-6 p-3" v-for="yacht in yachts" :key="yacht.url">
                     <div class="img-content">
-                        <img :src="yacht.url" :key="yacht.url" class="yacht-img">
+                        <img :src="yacht.url" class="yacht-img">
                     </div>
                 </div>
                 <div class="col-12 text-center py-5">
@@ -59,6 +59,7 @@ export default {
         </div>
     </section>
 </template>
+
 
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;

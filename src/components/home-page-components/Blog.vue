@@ -29,11 +29,10 @@ export default {
     <div class="container py-5">
         <div class="row">
             <div class="col-12 text-center py-5">
-                <h2 class="title-section mb-5">Yachtsmen`s Blog
-                </h2>
+                <h2 class="title-section mb-5">Yachtsmen's Blog</h2>
                 <hr>
             </div>
-            <div class="col-4 text-center mb-5" v-for="(post, index) in posts" key="post.index">
+            <div class="col-lg-4 col-12 text-center mb-5" v-for="(post, index) in posts" :key="index">
                 <div class="img-content">
                     <img :src="post.image" :alt="post.title" class="post-img mb-4">
                 </div>
@@ -41,7 +40,7 @@ export default {
                 <h4 class="sub-title-s mb-4">{{ post.title }}</h4>
             </div>
             <div class="col-12 text-center">
-                <button class="btn-primary-to-secondary ">View all Blog Post</button>
+                <button class="btn-primary-to-secondary">View all Blog Posts</button>
             </div>
         </div>
     </div>

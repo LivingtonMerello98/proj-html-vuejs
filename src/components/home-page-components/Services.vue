@@ -60,18 +60,17 @@ export default {
                 <div class="col-12 text-center">
                     <h2 class="title-section mb-5">Services</h2>
                 </div>
-                <hr class="mb-5">
-                <div class="content">
-                    <div class="row">
-                        <!-- card -->
-                        <div class="col-4 py-3 mb-5" v-for="(service, index) in services" :key="service.index">
-                            <div class="title mb-5">
-                                <span class="custom-primary-color" v-html="service.icon"></span>
-                                <span class="sub-title-l mx-3">{{ service.title }}</span>
-                            </div>
-                            <div class="text paragraph-thin">
-                                <p>{{ service.text }}</p>
-                            </div>
+            </div>
+            <hr class="mb-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6" v-for="(service, index) in services" :key="index">
+                    <div class="service-item mb-5 py-3">
+                        <div class="title mb-3">
+                            <span class="custom-primary-color" v-html="service.icon"></span>
+                            <span class="sub-title-l mx-3">{{ service.title }}</span>
+                        </div>
+                        <div class="text paragraph-thin">
+                            <p>{{ service.text }}</p>
                         </div>
                     </div>
                 </div>
@@ -79,6 +78,7 @@ export default {
         </div>
     </section>
 </template>
+
 
 
 
