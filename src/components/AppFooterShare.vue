@@ -11,41 +11,41 @@ export default {
                 <div class="col-md-3 col-12 mb-4 mb-md-0 text-md-left">
                     <img src="https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/logo.png"
                         alt="" class="img-fluid">
-                    <p>Yacht rentals for people who love sailing across the seas…</p>
+                    <p class="fs-5">Yacht rentals for people who love sailing across the seas…</p>
                 </div>
                 <div class="col-md-3 col-12 mb-4 mb-md-0">
                     <ul class="list-unstyled text-md-left fw-bolder">
-                        <li class="py-3">
-                            <a href="/">YACHTS</a>
+                        <li class="py-2">
+                            <a href="#" class="fw-bold fs-5">YACHTS</a>
                         </li>
                         <li class="py-2">
-                            <a href="/">SERVICES</a>
+                            <a href="#" class="fw-bold fs-5">SERVICES</a>
                         </li>
                         <li class="py-2">
-                            <a href="/">RESERVATIONS</a>
+                            <a href="#" class="fw-bold fs-5">RESERVATIONS</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-12 mb-4 mb-md-0">
                     <ul class="list-unstyled text-md-left fw-bolder">
                         <li class="py-2">
-                            <a href="/">BLOG</a>
+                            <a href="#" class="fw-bold fs-5">BLOG</a>
                         </li>
                         <li class="py-2">
-                            <a href="/">PRIVACY POLICY</a>
+                            <a href="#" class="fw-bold fs-5">PRIVACY POLICY</a>
                         </li>
                         <li class="py-2">
-                            <a href="/">TERMS OF USE</a>
+                            <a href="#" class="fw-bold fs-5">TERMS OF USE</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-12 text-md-left newsletter align-self-center py-3">
-                    <h2 class="fw-bolder py-5">Newsletter</h2>
+                <div class="col-md-3 col-12 text-md-left newsletter py-3">
+                    <h2 class="fw-bolder py-5 fw-bold fs-3">Newsletter</h2>
                     <form class="form-inline justify-content-center" @submit.prevent="subscribe">
-                        <div class="form-group mb-2 d-flex">
+                        <div class="form-group mb- d-flex">
                             <input type="email" v-model="email" class="form-control" placeholder="Enter your e-mail"
                                 required>
-                            <button type="submit" class="btn-primary-to-secondary">Subscribe</button>
+                            <button type="submit" class="btn-primary-to-secondary fw-bold">Subscribe</button>
                         </div>
                     </form>
                 </div>
@@ -57,9 +57,9 @@ export default {
             <div class="row">
                 <div
                     class="col-md-6 col-12 d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start">
-                    <span class="rights mr-md-2">&copy; Zemez. All rights reserved.</span>
-                    <a href="/" class="text-light mx-2"> | Privacy Policy</a>
-                    <a href="/" class="text-light"> | Terms of Use</a>
+                    <span class="rights mr-md-2 text-size-lg">&copy; Zemez. All rights reserved.</span>
+                    <a href="#" class="text-light mx-2 text-size-lg"> | Privacy Policy</a>
+                    <a href="#" class="text-light text-size-lg"> | Terms of Use</a>
                 </div>
                 <div
                     class="col-md-6 col-12 d-flex justify-content-center justify-content-md-end align-items-center mt-3 mt-md-0">
@@ -77,6 +77,11 @@ export default {
 @use 'src/assets/partials/mixin' as*;
 @use 'src/assets/partials/variables' as*;
 
+.color-share a:hover {
+    color: blue;
+}
+
+
 .color-share {
     background-color: #F5F5F5;
 }
@@ -84,6 +89,7 @@ export default {
 a {
     text-decoration: none;
     color: black;
+
 }
 
 .bt-footer {
@@ -92,11 +98,6 @@ a {
 
 .rights {
     color: white;
-}
-
-.newsletter {
-    max-width: 500px;
-    margin: 50px auto;
 }
 
 .newsletter input {

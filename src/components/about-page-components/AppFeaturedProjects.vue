@@ -59,8 +59,6 @@
         cursor: pointer;
         :hover{
             background-color: black;
-            background-image: url();
-            z-index: initial;
             opacity: 0.8;
         }
     }
