@@ -39,7 +39,7 @@ export default {
 
 <template>
     <section class="bg-header">
-        <div class="container py-2">
+        <div class="container py-1">
             <header>
                 <div
                     class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
@@ -58,6 +58,14 @@ export default {
                 </div>
             </header>
         </div>
+        <div class="col-12 py-3 bg-white">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="text-uppercase nav pr border-right ">home</div>
+                    <div class="text-uppercase nav pl custom-active">lorem</div>
+                </div>
+            </div>
+        </div>
     </section>
 </template>
 
@@ -75,5 +83,27 @@ export default {
     font-size: 14.4px;
     padding: 27px 23px 22px;
     font-weight: 600;
+}
+
+.bg-white {
+    background-color: #e0e0e0;
+}
+
+.pr {
+    padding-right: 2rem;
+    border-right: 2px solid black;
+}
+
+.pl {
+    padding-left: 2rem;
+}
+
+.nav {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.custom-active {
+    color: $custom-primary-color;
 }
 </style>
