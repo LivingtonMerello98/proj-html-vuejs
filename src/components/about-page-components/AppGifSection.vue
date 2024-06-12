@@ -53,4 +53,8 @@
         z-index: 10;
         padding-top: 150px;
     }
+
+    p{
+        font-size: $custom-title-s
+    }
 </style>

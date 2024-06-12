@@ -6,11 +6,9 @@ export default {
 
 <template>
   <section>
-    <h2 class="text-center">Testimonials</h2>
-    <div>
-      <span class="divider text-center"></span>
-    </div>
+    <h2 class="text-center py-5">Testimonials</h2>
     <div class="container">
+      <hr class="mb-5 py-5">
       <div class="row">
         <div class="col-6">
           <div class="container">
@@ -24,18 +22,17 @@ export default {
                 </div>
               </div>
               <div class="col-6">
-                <div class="info-testimonials">
-                  <span>Yachts Repairs</span>
-                  <p>
-                    <span
-                      >As a yacht owner, after either of my regular maintenance
+                <div class="info-testimonials py-3">
+                  <span class="role-testimonial">Yachts Repairs</span>
+                  <p class="py-5">
+                    <span>As a yacht owner, after either of my regular maintenance
                       checkups, I oftentimes find it necessary to do this or
                       that kind of a repair. The thing is that I don’t always
                       have enough time (or sometimes the skill), to do all of
                       the repairs all by myself…</span
                     >
                   </p>
-                  <span>Albert Winning</span>
+                  <span class="name-testimonial"> - Albert Winning</span>
                 </div>
               </div>
             </div>
@@ -53,18 +50,17 @@ export default {
                 </div>
               </div>
               <div class="col-6">
-                <div class="info-testimonials">
-                  <span>Yachts Rentals</span>
-                  <p>
-                    <span
-                      >Having had a real handful of favorite pastimes over the
+                <div class="info-testimonials py-3">
+                  <span class="role-testimonial">Yachts Rentals</span>
+                  <p class="py-5">
+                    <span>Having had a real handful of favorite pastimes over the
                       course of my whole adult life, sailing was always front
                       and center in such a list. So, when I found out about this
                       yachts chartering service located just a few miles near my
                       home, I was thrilled!</span
                     >
                   </p>
-                  <span>Reginald Stanhow</span>
+                  <span class="name-testimonial"> - Reginald Stanhow</span>
                 </div>
               </div>
             </div>
@@ -88,7 +84,21 @@ export default {
 
 .button-view-all{
   @include btn-primary-to-secondary 
-  
+  }
+
+  .name-testimonial{
+    color: #09C2DD;
+    font-weight: bold;
+  }
+
+  h2 {
+        font-weight: bold;
+        font-size: $custom-title-section-size
+    }
+
+  .role-testimonial{
+    font-weight: bold;
+    font-size: $custom-sub-title-m
   }
 </style>
 

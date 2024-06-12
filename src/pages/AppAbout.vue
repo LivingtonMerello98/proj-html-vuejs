@@ -50,4 +50,8 @@ export default {
   </footer>
 </template>
 
-<style></style>
+<style>
+  /* :hover{
+    color: #20C7DF;
+  } */
+</style>
