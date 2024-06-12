@@ -8,6 +8,7 @@ import AppFooterShare from '../components/AppFooterShare.vue';
 import Testimonials from '../components/home-page-components/Testimonials.vue';
 import Hero from '../components/home-page-components/Hero.vue';
 import Blog from '../components/home-page-components/Blog.vue';
+import AppUniversalHeader from '../components/AppUniversalHeader.vue';
 
 
 export default {
@@ -22,13 +23,15 @@ export default {
         AppFooterShare,
         Testimonials,
         Hero,
-        Blog
+        Blog,
+        AppUniversalHeader
 
     }
 }
 </script>
 
 <template>
+    <AppUniversalHeader />
     <Hero />
     <OurHistory />
     <BettersService />
