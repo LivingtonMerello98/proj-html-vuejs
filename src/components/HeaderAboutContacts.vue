@@ -14,7 +14,7 @@
             <div class="col-12 d-flex">
                 <div class="logo-header">
                     <a href="#">
-                        <img src="/src/img/logo.webp" alt="">
+                        <img src="/src/components/about-page-components/logo/logo.webp" alt="">
                     </a> 
                 </div>
                 <div class="nav-pages">
