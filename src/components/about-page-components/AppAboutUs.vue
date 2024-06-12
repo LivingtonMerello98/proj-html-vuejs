@@ -133,4 +133,11 @@
     //     border-width: 1px;
     // }
 
+    .custom-circle {
+        background-color: $custom-primary-color ;
+        color: white;
+        border-radius: 100%;
+        padding: 1rem;
+    }
+
 </style>
