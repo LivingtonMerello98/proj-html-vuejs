@@ -11,9 +11,11 @@ export default {
 
 <template>
 
-    <!-- <div class="container">
+    
+    <!-- STRUTTURA BASE
+    <div class="container">
         <div class="row">
-            <div class="col-6 py-4 bg-primary"></div>
+            <div class="col-12 py-4 bg-primary"></div>
             <div class="col-6 py-4 bg-danger">
                 <h1>ciao mondo</h1>
             </div>
