@@ -9,6 +9,10 @@ import HeaderAboutContacts from "../components/HeaderAboutContacts.vue";
 import AppGifSection from "../components/about-page-components/AppGifSection.vue"
 import AppAboutUs from "../components/about-page-components/AppAboutUs.vue"
 import AppWhyChooseUs from "../components/about-page-components/AppWhyChooseUs.vue"
+import AppOurTeam from "../components/about-page-components/AppOurTeam.vue"
+import AppTestimonials from "../components/about-page-components/AppTestimonials.vue"
+import AppFeaturedProjects from "../components/about-page-components/AppFeaturedProjects.vue"
+import AppFooterShare from '../components/contacts-page-componets/AppFooterShare.vue';
 
 export default {
   name: "AppAbout",
@@ -18,6 +22,10 @@ export default {
     AppGifSection,
     AppAboutUs,
     AppWhyChooseUs,
+    AppOurTeam,
+    AppTestimonials,
+    AppFeaturedProjects,
+    AppFooterShare,
   },
 };
 </script>
@@ -30,12 +38,13 @@ export default {
     <AppGifSection />
     <AppAboutUs />
     <AppWhyChooseUs />
-    
-    <!-- <section>meet our team</section>
-    <section>testimonials</section>
-    <section>featured projects</section>  -->
+    <AppOurTeam />
+    <AppTestimonials />
+    <AppFeaturedProjects/>
   </main>
-  <!-- <footer>footer</footer> -->
+  <footer>
+    <AppFooterShare/>
+  </footer>
 </template>
 
 <style></style>
