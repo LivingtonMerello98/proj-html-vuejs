@@ -12,7 +12,10 @@ import AppWhyChooseUs from "../components/about-page-components/AppWhyChooseUs.v
 import AppOurTeam from "../components/about-page-components/AppOurTeam.vue"
 import AppTestimonials from "../components/about-page-components/AppTestimonials.vue"
 import AppFeaturedProjects from "../components/about-page-components/AppFeaturedProjects.vue"
-import AppFooterShare from '../components/contacts-page-componets/AppFooterShare.vue';
+
+//footer
+import AppFooterShare from "../components/AppFooterShare.vue";
+
 
 export default {
   name: "AppAbout",
@@ -25,7 +28,7 @@ export default {
     AppOurTeam,
     AppTestimonials,
     AppFeaturedProjects,
-    AppFooterShare,
+    AppFooterShare
   },
 };
 </script>
@@ -33,17 +36,17 @@ export default {
 <template>
   <UniversalHeader />
   <HeaderAboutContacts />
-  
+
   <main>
     <AppGifSection />
     <AppAboutUs />
     <AppWhyChooseUs />
     <AppOurTeam />
     <AppTestimonials />
-    <AppFeaturedProjects/>
+    <AppFeaturedProjects />
   </main>
   <footer>
-    <AppFooterShare/>
+    <AppFooterShare />
   </footer>
 </template>
 

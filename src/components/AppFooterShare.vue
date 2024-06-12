@@ -8,13 +8,13 @@ export default {
     <section class="color-share">
         <div class="container py-5">
             <div class="row">
-                <div class="col-md-3 col-12 mb-4 mb-md-0 text-center text-md-left">
+                <div class="col-md-3 col-12 mb-4 mb-md-0 text-md-left">
                     <img src="https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/logo.png"
                         alt="" class="img-fluid">
                     <p>Yacht rentals for people who love sailing across the seas…</p>
                 </div>
                 <div class="col-md-3 col-12 mb-4 mb-md-0">
-                    <ul class="list-unstyled text-center text-md-left">
+                    <ul class="list-unstyled text-md-left fw-bolder">
                         <li>
                             <a href="/">YACHTS</a>
                         </li>
@@ -27,7 +27,7 @@ export default {
                     </ul>
                 </div>
                 <div class="col-md-3 col-12 mb-4 mb-md-0">
-                    <ul class="list-unstyled text-center text-md-left">
+                    <ul class="list-unstyled text-md-left fw-bolder">
                         <li>
                             <a href="/">BLOG</a>
                         </li>
@@ -39,8 +39,8 @@ export default {
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-12 text-center text-md-left newsletter text-center">
-                    <h2>Newsletter</h2>
+                <div class="col-md-3 col-12 text-md-left newsletter">
+                    <h2 class="fw-bolder">Newsletter</h2>
                     <form class="form-inline justify-content-center" @submit.prevent="subscribe">
                         <div class="form-group mb-2 d-flex">
                             <input type="email" v-model="email" class="form-control" placeholder="Enter your e-mail"
