@@ -35,7 +35,7 @@
         position: relative;
         right: 0;
         width: 100%;
-        height: 100vh;
+        height: 70vh;
     }
 
     .showcase video{
@@ -45,6 +45,7 @@
         width: 100%;
         object-fit: fill;
         max-height: 700px;
+        // opacity: 0.1;
     }
 
     .texts-and-button{

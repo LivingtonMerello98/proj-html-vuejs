@@ -4,7 +4,10 @@
 import UniversalHeader from "../components/AppUniversalHeader.vue";
 import HeaderAboutContacts from "../components/HeaderAboutContacts.vue";
 
+
+//main
 import AppGifSection from "../components/about-page-components/AppGifSection.vue"
+import AppAboutUs from "../components/about-page-components/AppAboutUs.vue"
 
 export default {
   name: "AppAbout",
@@ -12,6 +15,7 @@ export default {
     UniversalHeader,
     HeaderAboutContacts,
     AppGifSection,
+    AppAboutUs,
   },
 };
 </script>
@@ -22,6 +26,7 @@ export default {
   
   <main>
     <AppGifSection />
+    <AppAboutUs />
     <!-- <section>about us</section>
     <section>why people choose us</section>
     <section>meet our team</section>
