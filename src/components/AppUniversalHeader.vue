@@ -68,7 +68,7 @@ export default {
 @use 'src/assets/partials/variables' as *;
 
     .widget-container{
-        background-color: red;
+        background-color: white;
         padding: 10px;
     }
     .widget-container, .left-side, .right-side, 
