@@ -5,7 +5,8 @@ import Services from '../components/home-page-components/Services.vue';
 import OurYachts from '../components/home-page-components/OurYachts.vue';
 import WorldRallly from '../components/home-page-components/WorldRallly.vue';
 import AppFooterShare from '../components/AppFooterShare.vue';
-
+import blog from '../components/home-page-components/blog.vue';
+import Testimonials from '../components/home-page-components/Testimonials.vue';
 
 
 
@@ -18,7 +19,9 @@ export default {
         Services,
         OurYachts,
         WorldRallly,
-        AppFooterShare
+        AppFooterShare,
+        blog,
+        Testimonials
 
     }
 }
@@ -30,6 +33,8 @@ export default {
     <Services />
     <OurYachts />
     <WorldRallly />
+    <blog />
+    <Testimonials />
     <footer>
         <AppFooterShare />
     </footer>
