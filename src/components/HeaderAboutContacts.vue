@@ -8,7 +8,7 @@ export default {
             navLinks: [
                 {
                     navItem: 'about',
-                    url: ''
+                    url: '/about'
                 },
                 {
                     navItem: 'services',
@@ -28,7 +28,7 @@ export default {
                 },
                 {
                     navItem: 'contacts',
-                    url: ''
+                    url: '/contacts'
                 }
             ]
         }
