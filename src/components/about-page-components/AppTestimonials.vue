@@ -29,7 +29,7 @@ export default {
       <div class="row">
         <div class="col-6 d-flex" v-for="testimonial in testimonials">
           <div class="card-testimonial">
-            <img :src="testimonial.url" alt=""/>
+            <img :src="testimonial.url" alt="" />
           </div>
           <div class="info-testimonials px-4">
             <span class="role-testimonial">{{ testimonial.role }}</span>
