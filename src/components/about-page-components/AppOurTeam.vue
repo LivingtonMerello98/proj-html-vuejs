@@ -99,6 +99,11 @@ section {
 
 h2 {
     font-weight: bold;
+    font-size: $custom-title-section-size
+}
+
+h2 {
+    font-weight: bold;
     font-size: $custom-title-section-size;
 }
 
