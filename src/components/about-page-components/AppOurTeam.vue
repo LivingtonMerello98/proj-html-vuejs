@@ -78,7 +78,7 @@ export default {
                                 <span>{{ member.role }}</span>
                             </div>
                             <div class="member-info py-3">
-                                <<<<<<< HEAD <p>Mr. Buoyega was born in one of Detroit’s poorest blocks, all before pursuing
+                                <p>Mr. Buoyega was born in one of Detroit’s poorest blocks, all before pursuing
                                     his
                                     successful managerial career in the future. For him, the breakthrough happened when he
                                     was able to get on Harvard University’s Law School list. After graduating from there, he
@@ -258,4 +258,5 @@ h2 {
 
 .member-name {
     color: #09C2DD;
-}</style>
+}
+</style>
