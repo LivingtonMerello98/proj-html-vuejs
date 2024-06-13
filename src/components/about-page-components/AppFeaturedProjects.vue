@@ -50,7 +50,6 @@
             <h2 class="py-5">Featured Projects</h2>
             <hr class="mb-5">
             <div class="row">
-                <!-- <div class="col-lg-4 col-md-6 col-sm-12"> -->
                 <div class="col-lg-4 col-md-6 col-sm-12 py-5 px-3"
                 v-for="yacht in yachts" :key="yacht.url">
                     <div class="img-content position-relative">
