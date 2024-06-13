@@ -11,7 +11,8 @@ export default {
             navLinks: [
                 {
                     navItem: 'about',
-                    url: '/about'
+                    url: '/about',
+                    action: this.HandleAboutClick
                 },
                 {
                     navItem: 'services',
@@ -35,6 +36,11 @@ export default {
                 }
             ]
         }
+    },
+    methods: {
+        handleAboutClick() {
+            this.$emit('about-clicked');
+        }
     }
 }
 
@@ -50,9 +56,11 @@ export default {
                         <img :src="logo" alt="logo">
                     </a>
 
-                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" v-for="(link, index) in navLinks"
-                        :key="link.index">
-                        <li class=""><a href="#" class="nav-link px-2 custom-nav-link">{{ link.navItem }}</a></li>
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                        <li v-for="(link, index) in navLinks" :key="index">
+                            <a href="#" @click="link.navItem === 'about' ? link.action() : null"
+                                class="nav-link px-2 custom-nav-link">{{ link.navItem }}</a>
+                        </li>
                     </ul>
 
                     <div class="col-md-3 text-end">
