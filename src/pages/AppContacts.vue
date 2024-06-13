@@ -2,7 +2,6 @@
 import AppForm from '../components/contacts-page-componets/AppForm.vue';
 import AppMaps from '../components/contacts-page-componets/AppMaps.vue';
 import HeaderAboutContacts from '../components/HeaderAboutContacts.vue';
-import AppFooterShare from '../components/AppFooterShare.vue';
 import AppUniversalHeader from '../components/AppUniversalHeader.vue';
 
 export default {
@@ -10,7 +9,6 @@ export default {
     components: {
         AppForm,
         AppMaps,
-        AppFooterShare,
         HeaderAboutContacts,
         AppUniversalHeader
 
@@ -23,7 +21,6 @@ export default {
     <HeaderAboutContacts />
     <AppMaps></AppMaps>
     <AppForm></AppForm>
-    <AppFooterShare />
 </template>
 
 <style></style>
