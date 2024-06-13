@@ -1,5 +1,5 @@
 <script>
-    export default {
+export default {
     name: "AppFeaturedProjects",
     data() {
         return {
@@ -18,7 +18,7 @@
                     icon: '<i class="fa-solid fa-anchor"></i>',
                     name: 'Sport cruiser',
                     url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services2.jpg'
-                    
+
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
@@ -42,16 +42,18 @@
 </script>
 
 <template>
-     <section>
-         <div>
-             <span class="divider text-center"></span>
-             </div>
-             <div class="container">
+    <section>
+        <div>
+            <span class="divider text-center"></span>
+        </div>
+        <div class="container">
             <h2 class="py-5">Featured Projects</h2>
-            <hr class="mb-5">
+            <div class="col-12  my-4" style="background-color: rgba(0, 0, 0, 0.037);">
+                <div class="col-1" style="height: 1px; background-color:#6EC1E4;">
+                </div>
+            </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 py-5 px-3"
-                v-for="yacht in yachts" :key="yacht.url">
+                <div class="col-lg-4 col-md-6 col-sm-12 py-5 px-3" v-for="yacht in yachts" :key="yacht.url">
                     <div class="img-content position-relative">
                         <img :src="yacht.url" class="yacht-img">
                         <div class="overlay">
@@ -68,17 +70,17 @@
 </template>
 
 <style lang="scss" scoped>
-    @use 'src/assets/partials/mixin' as*;
-    @use 'src/assets/partials/variables' as*;
+@use 'src/assets/partials/mixin' as*;
+@use 'src/assets/partials/variables' as*;
 
-    
-    
-    h2 {
-        font-weight: bold;
-        font-size: $custom-title-section-size
-    }
 
-    .img-content {
+
+h2 {
+    font-weight: bold;
+    font-size: $custom-title-section-size
+}
+
+.img-content {
     position: relative;
     overflow: hidden;
 
@@ -111,5 +113,4 @@
     color: $custom-primary-color;
     font-size: $custom-title-m ;
 }
-
 </style>

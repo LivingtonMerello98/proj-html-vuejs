@@ -25,7 +25,10 @@ export default {
   <section>
     <h2 class="text-center py-5">Testimonials</h2>
     <div class="container">
-      <hr class="mb-5 py-5" />
+      <div class="col-12  mb-5" style="background-color: rgba(0, 0, 0, 0.037);">
+        <div class="col-1" style="height: 1px; background-color:#6EC1E4; margin: 0 auto;">
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-6 d-flex " v-for="testimonial in testimonials">
           <div class="card-testimonial">

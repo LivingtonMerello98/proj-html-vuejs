@@ -63,7 +63,10 @@ export default {
     <section class="our-team-section py-5">
         <div class="container py-5">
             <h2 class="py-5">Meet Our Team</h2>
-            <hr class="mb-5">
+            <div class="col-12  mb-5" style="background-color: rgba(0, 0, 0, 0.037);">
+                <div class="col-1" style="height: 1px; background-color:#6EC1E4; margin: 0 auto;">
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" v-for="member in ourTeam" :key="member.name">
                     <div class="container-card">
