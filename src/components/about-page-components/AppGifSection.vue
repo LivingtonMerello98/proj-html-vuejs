@@ -34,7 +34,7 @@ export default {
 .showcase {
     position: relative;
     width: 100%;
-    height: 100%; // Changed to full viewport height
+    height: 100%;
 
     video {
         position: absolute;
