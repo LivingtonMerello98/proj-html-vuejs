@@ -4,7 +4,7 @@ import AppHome from './pages/AppHome.vue'
 import AppAbout from './pages/AppAbout.vue'
 import AppContacts from './pages/AppContacts.vue'
 import test from './pages/test.vue'
-import testHero from './pages/testHero.vue'
+
 
 
 
@@ -31,13 +31,7 @@ const router = createRouter({
             name: 'test',
             path: '/test',
             component: test
-        },
-        {
-            name: 'testHero',
-            path: '/testHero',
-            component: testHero
         }
-
 
     ],
 });
