@@ -1,16 +1,8 @@
 <script>
 export default {
-    name: 'AppFooterShare',
-    props: {
-        links: {
-            type: Array,
-            required: true,
-            default: () => []
-        }
-    },
-};
+    name: 'AppFooterShare'
+}
 </script>
-
 <template>
     <footer class="color-share">
         <div class="container py-5">
@@ -75,21 +67,23 @@ export default {
     </footer>
 </template>
 
-<style lang="scss" scoped>
-@use 'src/assets/partials/mixin' as *;
-@use 'src/assets/partials/variables' as *;
+<style scoped lang="scss">
+@use 'src/assets/partials/mixin' as*;
+@use 'src/assets/partials/variables' as*;
 
 .color-share a:hover {
     color: blue;
 }
 
+
 .color-share {
-    background-color: #f5f5f5;
+    background-color: #F5F5F5;
 }
 
 a {
     text-decoration: none;
     color: black;
+
 }
 
 .bt-footer {
@@ -106,10 +100,10 @@ a {
 }
 
 .btn-primary-to-secondary {
-    @include btn-primary-to-secondary;
+    @include btn-primary-to-secondary
 }
 
-.custom-font-size {
+.costum-font-size {
     font-size: 16px;
 }
 </style>
