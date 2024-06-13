@@ -42,20 +42,26 @@ export default {
             <div class="row">
                 <div class="title-container text-center py-5">
                     <h2 class="title-s">Testimonials</h2>
-                    <hr>
                 </div>
-                <div class="col-12 d-flex flex-column align-items-center">
-                    <div class="card p-1 mb-4 py-5">
+                <div class="col-12 my-4" style="background-color:#09C2DD;">
+                    <div class="col-1" style="height: 1px; background-color:#ffffff ; margin:0 auto;">
+                    </div>
+                </div>
+                <div class="col-12 d-flex py-3 flex-column align-items-center mb-5">
+                    <div class="card p-1 p-5 ">
                         <div class="d-flex">
-                            <div class="col-3 py-2 text-center">
-                                <div class="img-content">
+                            <div class="col-3 py-2 d-flex justify-content-center align-items-center">
+                                <div class="img-content d-flex justify-content-center align-items-center">
                                     <img :src="testimonials[currentIndex].profile" :alt="testimonials[currentIndex].sign"
                                         class="img-fluid img-size rounded-circle">
                                 </div>
                             </div>
-                            <div class="col py-2">
-                                <p class="text-white">{{ testimonials[currentIndex].paragraph }}</p>
-                                <h3 class="fw-700 text-white">{{ testimonials[currentIndex].sign }}</h3>
+
+                            <div class="col py-2 d-flex justify-content-center align-items-center ">
+                                <div class="text-content">
+                                    <p class="custom-paragraph">{{ testimonials[currentIndex].paragraph }}</p>
+                                    <h3 class="custom-sign">{{ testimonials[currentIndex].sign }}</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -84,7 +90,21 @@ export default {
     max-width: 80%;
 }
 
+.custom-paragraph {
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8em;
+}
+
+.custom-sign {
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+
 .img-size {
-    max-width: 50%;
+    max-width: 100%;
 }
 </style>
