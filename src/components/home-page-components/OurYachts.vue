@@ -6,42 +6,42 @@ export default {
             yachts: [
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'express',
+                    name: 'Express',
                     url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services-1.jpg'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'cruiser',
+                    name: 'Cruiser',
                     url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services1.jpg'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'name cruiser',
+                    name: 'Name Cruiser',
                     url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v2/wp-content/uploads/2020/12/services3.jpg'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'flybridges',
+                    name: 'Flybridges',
                     url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services2.jpg'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'sedan bridges',
+                    name: 'Sedan Bridges',
                     url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services4.jpg'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'tri-deck',
+                    name: 'Tri-Deck',
                     url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services5.jpg'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'megayacths',
+                    name: 'Megayacths',
                     url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services6.jpg'
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'convertibles',
+                    name: 'Convertibles',
                     url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services7.jpg'
                 }
             ]
