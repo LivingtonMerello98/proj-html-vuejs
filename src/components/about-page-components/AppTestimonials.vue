@@ -1,80 +1,69 @@
 <script>
 export default {
   name: "AppTestimonials",
+  data() {
+    return {
+      testimonials: [
+        {
+          url: "https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/person0.jpg",
+          name: "- Albert Winning",
+          role: "Yatch Repairs",
+          desc: "As a yacht owner, after either of my regular maintenance checkups, I oftentimes find it necessary to do this or that kind of a repair. The thing is that I don’t always have enough time (or sometimes the skill), to do all of the repairs all by myself…",
+        },
+        {
+          url: "https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/person01.jpg",
+          name: "- Reginald Stanhow",
+          role: "Yatch Rentals",
+          desc: "Having had a real handful of favorite pastimes over the course of my whole adult life, sailing was always front  and center in such a list. So, when I found out about this yachts chartering service located just a few miles near my home, I was thrilled!",
+        },
+      ],
+    };
+  },
 };
 </script>
+
+<!-- <div class="card-testimonial">
+  <img
+    :src="testimonial.url"
+    alt=""/>
+</div>
+<div class="info-testimonials py-3">
+<span class="role-testimonial">{{testimonial.role}}</span>
+<p class="py-5">
+  <span>{{ testimonial.desc }}</span>
+</p>
+<span class="name-testimonial">{{testimonial.name }}</span>
+</div> -->
+
+<!-- v-for="testimonial in testimonials" -->
 
 <template>
   <section>
     <h2 class="text-center py-5">Testimonials</h2>
     <div class="container">
-      <hr class="mb-5 py-5">
+      <hr class="mb-5 py-5" />
       <div class="row">
-        <div class="col-6">
-          <div class="container">
-            <div class="row">
-              <div class="col-6">
-                <div class="card-testimonial">
-                  <img
-                    src="/src/components/about-page-components/testimonials/testimonial1.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="info-testimonials py-3">
-                  <span class="role-testimonial">Yachts Repairs</span>
-                  <p class="py-5">
-                    <span>As a yacht owner, after either of my regular maintenance
-                      checkups, I oftentimes find it necessary to do this or
-                      that kind of a repair. The thing is that I don’t always
-                      have enough time (or sometimes the skill), to do all of
-                      the repairs all by myself…</span
-                    >
-                  </p>
-                  <span class="name-testimonial"> - Albert Winning</span>
-                </div>
-              </div>
-            </div>
+        <div class="col-6 d-flex" v-for="testimonial in testimonials">
+          <div class="card-testimonial">
+            <img :src="testimonial.url" alt=""/>
           </div>
-        </div>
-        <div class="col-6">
-          <div class="container">
-            <div class="row">
-              <div class="col-6">
-                <div class="card-testimonial">
-                  <img
-                    src="/src/components/about-page-components/testimonials/testimonial2.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="info-testimonials py-3">
-                  <span class="role-testimonial">Yachts Rentals</span>
-                  <p class="py-5">
-                    <span>Having had a real handful of favorite pastimes over the
-                      course of my whole adult life, sailing was always front
-                      and center in such a list. So, when I found out about this
-                      yachts chartering service located just a few miles near my
-                      home, I was thrilled!</span
-                    >
-                  </p>
-                  <span class="name-testimonial"> - Reginald Stanhow</span>
-                </div>
-              </div>
-            </div>
+          <div class="info-testimonials px-4">
+            <span class="role-testimonial">{{ testimonial.role }}</span>
+            <p class="py-4">
+              <span>{{ testimonial.desc }}</span>
+            </p>
+            <span class="name-testimonial">{{ testimonial.name }}</span>
           </div>
         </div>
       </div>
     </div>
-   <div class="container">
-    <div class="row">
-      <div class="col-12 text-center py-5">
-        <button class="button-view-all">View All</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center py-5">
+          <button class="button-view-all">View All</button>
+        </div>
       </div>
     </div>
-   </div>
   </section>
 </template>
 
@@ -82,24 +71,22 @@ export default {
 @use "src/assets/partials/mixin" as *;
 @use "src/assets/partials/variables" as *;
 
-.button-view-all{
-  @include btn-primary-to-secondary 
-  }
+.button-view-all {
+  @include btn-primary-to-secondary;
+}
 
-  .name-testimonial{
-    color: #09C2DD;
-    font-weight: bold;
-  }
+.name-testimonial {
+  color: #09c2dd;
+  font-weight: bold;
+}
 
-  h2 {
-        font-weight: bold;
-        font-size: $custom-title-section-size
-    }
+h2 {
+  font-weight: bold;
+  font-size: $custom-title-section-size;
+}
 
-  .role-testimonial{
-    font-weight: bold;
-    font-size: $custom-sub-title-m
-  }
+.role-testimonial {
+  font-weight: bold;
+  font-size: $custom-sub-title-m;
+}
 </style>
-
-
