@@ -13,8 +13,6 @@ import AppOurTeam from "../components/about-page-components/AppOurTeam.vue"
 import AppTestimonials from "../components/about-page-components/AppTestimonials.vue"
 import AppFeaturedProjects from "../components/about-page-components/AppFeaturedProjects.vue"
 
-//footer
-import AppFooterShare from "../components/AppFooterShare.vue";
 
 
 export default {
@@ -28,7 +26,6 @@ export default {
     AppOurTeam,
     AppTestimonials,
     AppFeaturedProjects,
-    AppFooterShare
   },
 };
 </script>
@@ -45,13 +42,10 @@ export default {
     <AppTestimonials />
     <AppFeaturedProjects />
   </main>
-  <footer>
-    <AppFooterShare />
-  </footer>
 </template>
 
 <style>
-  /* :hover{
+/* :hover{
     color: #20C7DF;
   } */
 </style>

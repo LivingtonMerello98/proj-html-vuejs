@@ -72,7 +72,7 @@ export default {
 @use 'src/assets/partials/variables' as*;
 
 .color-share a:hover {
-    color: blue;
+    color: $custom-color-title-section;
 }
 
 
