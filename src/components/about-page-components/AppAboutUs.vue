@@ -38,7 +38,7 @@ export default {
     <div class="container">
       <hr class="mb-5">
       <div class="row">
-        <div class="col-6 py-5"
+        <div class="col-lg-6 col-md-6 col-sm-12 py-5"
         v-for="us in aboutUs">
           <div class="custom-circles-header d-flex align-items-center">
             <div class="custom-circle" v-html="us.icon"></div>

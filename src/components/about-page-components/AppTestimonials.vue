@@ -27,16 +27,16 @@ export default {
     <div class="container">
       <hr class="mb-5 py-5" />
       <div class="row">
-        <div class="col-6 d-flex" v-for="testimonial in testimonials">
+        <div class="col-md-6 d-flex " v-for="testimonial in testimonials">
           <div class="card-testimonial">
-            <img :src="testimonial.url" alt=""/>
+            <img :src="testimonial.url" alt="" class="img-testimonial"/>
           </div>
-          <div class="info-testimonials px-4">
+          <div class="info-testimonials mb-5 px-4">
             <span class="role-testimonial">{{ testimonial.role }}</span>
-            <p class="py-4">
+            <p class="mb-3">
               <span>{{ testimonial.desc }}</span>
             </p>
-            <span class="name-testimonial">{{ testimonial.name }}</span>
+            <p class="name-testimonial mb-3">{{ testimonial.name }}</p>
           </div>
         </div>
       </div>
@@ -72,5 +72,9 @@ h2 {
 .role-testimonial {
   font-weight: bold;
   font-size: $custom-sub-title-m;
+}
+
+.img-testimonial{
+  max-height: 300px;
 }
 </style>
