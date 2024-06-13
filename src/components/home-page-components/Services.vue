@@ -57,7 +57,7 @@ export default {
     <section class="parallax">
         <div class="container py-5">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-lg-12 col-md-6 col-sm-12 text-center">
                     <h2 class="title-section py-3">Services</h2>
                 </div>
                 <div class="col-12  my-5" style="background-color: rgba(0, 0, 0, 0.037);">

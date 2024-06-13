@@ -8,7 +8,7 @@ export default {
             navLinks: [
                 {
                     navItem: 'about',
-                    url: ''
+                    url: '/about'
                 },
                 {
                     navItem: 'services',
@@ -28,7 +28,7 @@ export default {
                 },
                 {
                     navItem: 'contacts',
-                    url: ''
+                    url: '/contacts'
                 }
             ]
         }
@@ -40,6 +40,8 @@ export default {
 <template>
     <section class="bg-image">
         <div class="container py-3">
+
+
             <header>
                 <div
                     class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
@@ -47,16 +49,24 @@ export default {
                         <img :src="logo" alt="logo">
                     </a>
 
-                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" v-for="(link, index) in navLinks"
-                        :key="link.index">
-                        <li class=""><a href="#" class="nav-link px-2 custom-nav-link">{{ link.navItem }}</a></li>
+
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                        <li v-for="(link, index) in navLinks" :key="index">
+                            <!--<router-link></router-link> per la navigazione tra i link-->
+                            <router-link v-if="link.url" :to="link.url" class="nav-link mx-1  custom-nav-link">{{
+                                link.navItem }}</router-link>
+                            <a v-else href="#" class="nav-link px-2 mx-1  custom-nav-link">{{ link.navItem }}</a>
+                        </li>
                     </ul>
+
 
                     <div class="col-md-3 text-end">
                         <i class="fa-solid fa-magnifying-glass" style="color: #20C7DF;"></i>
                     </div>
                 </div>
             </header>
+
+
         </div>
         <div class="container py-5">
             <div class="row">
@@ -113,6 +123,11 @@ export default {
         text-transform: uppercase;
         font-size: 14.4px;
         padding: 27px 23px 22px;
+        font-weight: 600;
+    }
+
+    .nav {
+        font-size: 13px;
         font-weight: 600;
     }
 }
