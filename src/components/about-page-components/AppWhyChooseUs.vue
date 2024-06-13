@@ -1,6 +1,13 @@
 <script>
      export default {
     name: "AppWhyChooseUs",
+    data() {
+    return {
+
+ };
+ },
+
+
 }
 </script>
 
@@ -14,7 +21,7 @@
                     <div class="card-counter">
                         <div class="container">
                             <div class="content text-center">
-                                <div class="num-counter">5586</div>
+                                <div class="num-counter" data-val="5586">0000</div>
                                 <hr class="mb-5 card-divider">
                                 <div class="card-item">Yachts Available</div>
                             </div>
@@ -26,7 +33,7 @@
                     <div class="card-counter">
                         <div class="container">
                             <div class="content text-center">
-                                <div class="num-counter">3864</div>
+                                <div class="num-counter" data-val="3864">0000</div>
                                 <hr class="mb-5 card-divider">
                                 <div class="card-item">Types of Yachts</div>
                             </div>
@@ -38,7 +45,7 @@
                     <div class="card-counter">
                         <div class="container">
                             <div class="content text-center">
-                                <div class="num-counter">98</div>
+                                <div class="num-counter" data-val="98">00</div>
                                 <hr class="mb-5 card-divider">
                                 <div class="card-item">Charters a Year</div>
                             </div>
@@ -50,7 +57,7 @@
                     <div class="card-counter">
                         <div class="container">
                             <div class="content text-center">
-                                <div class="num-counter">11</div>
+                                <div class="num-counter" data-val="11">00</div>
                                 <hr class="mb-5 card-divider">
                                 <div class="card-item">Countries Covered</div>
                             </div>

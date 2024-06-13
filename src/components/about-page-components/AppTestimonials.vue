@@ -21,22 +21,6 @@ export default {
   },
 };
 </script>
-
-<!-- <div class="card-testimonial">
-  <img
-    :src="testimonial.url"
-    alt=""/>
-</div>
-<div class="info-testimonials py-3">
-<span class="role-testimonial">{{testimonial.role}}</span>
-<p class="py-5">
-  <span>{{ testimonial.desc }}</span>
-</p>
-<span class="name-testimonial">{{testimonial.name }}</span>
-</div> -->
-
-<!-- v-for="testimonial in testimonials" -->
-
 <template>
   <section>
     <h2 class="text-center py-5">Testimonials</h2>
