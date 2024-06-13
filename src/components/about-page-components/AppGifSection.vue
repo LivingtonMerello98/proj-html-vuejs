@@ -79,6 +79,7 @@ export default {
         }
     }
 
+    /* Imposta .col-6 su larghezza intera a 768px o meno */
     @media (max-width: 768px) {
         .col-6 {
             flex: 0 0 100%;
