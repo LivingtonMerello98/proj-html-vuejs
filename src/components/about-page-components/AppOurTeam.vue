@@ -74,7 +74,7 @@ export default {
                             <div class="member-name py-3">
                                 <h3>{{ member.name }}</h3>
                             </div>
-                            <div class="memeber-position ">
+                            <div class="member-position">
                                 <span>{{ member.role }}</span>
                             </div>
                             <div class="member-info py-3">
@@ -99,10 +99,43 @@ section {
 
 h2 {
     font-weight: bold;
-    font-size: $custom-title-section-size
+    font-size: $custom-title-section-size;
 }
 
 .member-name {
     color: #09C2DD;
 }
+
+.container-card {
+    margin-bottom: 1rem;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .col-sm-6 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
 </style>
+
