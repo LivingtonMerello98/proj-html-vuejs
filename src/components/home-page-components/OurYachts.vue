@@ -16,7 +16,7 @@ export default {
                 },
                 {
                     icon: '<i class="fa-solid fa-anchor"></i>',
-                    name: 'name cruiser',
+                    name: 'cruiser',
                     url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v2/wp-content/uploads/2020/12/services3.jpg'
                 },
                 {
