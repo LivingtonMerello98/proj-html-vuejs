@@ -65,7 +65,7 @@
             <h2 class="py-5">Meet Our Team</h2>
             <hr class="mb-5">
             <div class="row">
-                <div class="col-3" v-for="member in ourTeam">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4" v-for="member in ourTeam" :key="member.name">
                     <div class="container-card">
                         <div class="card-img">
                             <img :src="member.url" alt="">
@@ -87,6 +87,7 @@
         </div>
     </section>
 </template>
+
 
 <style lang="scss" scoped>
     @use 'src/assets/partials/mixin' as*;
