@@ -32,7 +32,7 @@ export default {
 
 <template>
   <section class="about-us-section">
-    <div>
+    <div class="pt-5">
       <h1 class="text-center py-5 custom-font">About Us</h1>
     </div>
     <div class="container">
@@ -61,6 +61,8 @@ export default {
 
 .about-us-section {
   background-image: url("https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/bg6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 span {
@@ -81,9 +83,4 @@ span {
   padding: 30px;
 }
 
-h1{
-  font-weight: 700;
-  line-height: 1.25em;
-  font-size: $custom-title-section-size
-}
 </style>
