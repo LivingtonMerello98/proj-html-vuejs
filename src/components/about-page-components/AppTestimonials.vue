@@ -29,11 +29,7 @@ export default {
       <div class="row">
         <div class="col-md-6 d-flex " v-for="testimonial in testimonials">
           <div class="card-testimonial">
-<<<<<<< HEAD
-            <img :src="testimonial.url" alt="" />
-=======
-            <img :src="testimonial.url" alt="" class="img-testimonial"/>
->>>>>>> 7fe4c1792accd2dca6a306ba0c1e08f733d142a4
+            <img :src="testimonial.url" alt="" class="img-testimonial" />
           </div>
           <div class="info-testimonials mb-5 px-4">
             <span class="role-testimonial">{{ testimonial.role }}</span>
@@ -78,7 +74,7 @@ h2 {
   font-size: $custom-sub-title-m;
 }
 
-.img-testimonial{
+.img-testimonial {
   max-height: 300px;
 }
 </style>

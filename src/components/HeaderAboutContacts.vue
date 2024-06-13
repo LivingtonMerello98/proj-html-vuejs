@@ -41,8 +41,7 @@ export default {
     <section class="bg-header">
         <div class="container py-1">
             <header>
-                <div
-                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 ">
                     <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                         <img :src="logo" alt="logo">
                     </a>
@@ -89,6 +88,10 @@ export default {
     font-size: 14.4px;
     padding: 27px 23px 22px;
     font-weight: 600;
+
+    &:hover {
+        color: $custom-color-title-section;
+    }
 }
 
 .bg-white {
