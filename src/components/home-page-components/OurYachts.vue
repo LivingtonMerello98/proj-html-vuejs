@@ -41,10 +41,13 @@ export default {
     <section class="py-5 bg custom-primary-color">
         <div class="container">
             <div class="row">
-                <div class="col-12 mb-3">
+                <div class="col-12 mb-3 py-4">
                     <div class="title text-center">
-                        <h2 class="title-s mb-3">Our Yachts</h2>
-                        <hr class="mb-3">
+                        <h2 class="title-s mb-5">Our Yachts</h2>
+                        <div class="col-12  mb-5" style="background-color: rgba(0, 0, 0, 0);">
+                            <div class="col-1" style="height: 1px; background-color:#ffffff; margin: 0 auto;">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-3 p-3" v-for="yacht in yachts">
