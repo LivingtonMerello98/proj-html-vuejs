@@ -36,14 +36,14 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-12 text-center mb-5" v-for="(post, index) in posts" :key="index">
+            <div class="col-lg-4 col-12 text-center mb-4" v-for="(post, index) in posts" :key="index">
                 <div class="img-content">
                     <img :src="post.image" :alt="post.title" class="post-img mb-4">
                 </div>
-                <p class="fs-6 thin-font mb-4">{{ post.data }}</p>
+                <p class=" thin-font mb-4">{{ post.data }}</p>
                 <h4 class="sub-title-s mb-4">{{ post.title }}</h4>
             </div>
-            <div class="col-12 text-center">
+            <div class="col-12 mb-5 text-center">
                 <button class="btn-primary-to-secondary">View all Blog Posts</button>
             </div>
         </div>
@@ -59,7 +59,8 @@ export default {
 }
 
 .thin-font {
-    font-weight: 200;
+    font-size: 13px;
+    font-weight: 300;
 }
 
 .title-section {
