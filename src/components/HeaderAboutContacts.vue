@@ -1,4 +1,7 @@
 <script>
+
+//HEADER CONTACTS AND ABOUT
+
 export default {
     name: 'HeaderAboutContacts',
     data() {

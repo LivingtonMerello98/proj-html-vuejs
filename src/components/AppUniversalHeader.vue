@@ -1,4 +1,7 @@
 <script>
+
+//HEADER DI TUTTI
+
 export default {
   name: "UniversalHeader",
   data() {

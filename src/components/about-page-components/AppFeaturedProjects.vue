@@ -1,7 +1,43 @@
 <script>
     export default {
-    name: "AppFeaturedProjects"
-    
+    name: "AppFeaturedProjects",
+    data() {
+        return {
+            yachts: [
+                {
+                    icon: '<i class="fa-solid fa-anchor"></i>',
+                    name: 'Express',
+                    url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services-1.jpg'
+                },
+                {
+                    icon: '<i class="fa-solid fa-anchor"></i>',
+                    name: 'Cruiser',
+                    url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services1.jpg'
+                },
+                {
+                    icon: '<i class="fa-solid fa-anchor"></i>',
+                    name: 'Sport cruiser',
+                    url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services2.jpg'
+                    
+                },
+                {
+                    icon: '<i class="fa-solid fa-anchor"></i>',
+                    name: 'Flybridges',
+                    url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v2/wp-content/uploads/2020/12/services3.jpg'
+                },
+                {
+                    icon: '<i class="fa-solid fa-anchor"></i>',
+                    name: 'Sedan bridges',
+                    url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services4.jpg'
+                },
+                {
+                    icon: '<i class="fa-solid fa-anchor"></i>',
+                    name: 'Tri-deck',
+                    url: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/services5.jpg'
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -15,35 +51,17 @@
             <hr class="mb-5">
 
             <div class="row">
-                <div class="col-4 py-5 px-3">
-                    <a href="#">
-                        <img src="/src/components/about-page-components/services/services-1.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-4 py-5 px-3">
-                    <a href="#">
-                        <img src="/src/components/about-page-components/services/services-2.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-4 py-5 px-3">
-                    <a href="#">
-                        <img src="/src/components/about-page-components/services/services-3.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-4 py-5 px-3">
-                    <a href="#">
-                        <img src="/src/components/about-page-components/services/services-4.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-4 py-5 px-3">
-                    <a href="#">
-                        <img src="/src/components/about-page-components/services/services-5.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-4 py-5 px-3">
-                    <a href="#">
-                        <img src="/src/components/about-page-components/services/services-6.jpg" alt="">
-                    </a>
+                <div class="col-4 py-5 px-3"
+                v-for="yacht in yachts" :key="yacht.url">
+                    <div class="img-content position-relative">
+                        <img :src="yacht.url" class="yacht-img">
+                        <div class="overlay">
+                            <div class="text-center">
+                                <div v-html="yacht.icon" class=" icon-custom-primary-color"></div>
+                                <div class="hover-text fs-2 fw-bold">{{ yacht.name }}</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,17 +72,45 @@
     @use 'src/assets/partials/mixin' as*;
     @use 'src/assets/partials/variables' as*;
 
-    img{
-        width: 400px;
-        cursor: pointer;
-        :hover{
-            background-color: black;
-            opacity: 0.8;
-        }
-    }
+    
     
     h2 {
         font-weight: bold;
         font-size: $custom-title-section-size
     }
+
+    .img-content {
+    position: relative;
+    overflow: hidden;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+    }
+
+    .hover-text {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.img-content:hover .overlay {
+    opacity: 1;
+}
+
+.icon-custom-primary-color {
+    color: $custom-primary-color;
+    font-size: $custom-title-m ;
+}
+
 </style>
