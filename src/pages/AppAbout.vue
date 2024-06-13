@@ -44,8 +44,3 @@ export default {
   </main>
 </template>
 
-<style>
-/* :hover{
-    color: #20C7DF;
-  } */
-</style>

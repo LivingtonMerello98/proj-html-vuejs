@@ -24,7 +24,3 @@ export default {
   <router-view></router-view>
   <AppFooterShare :links="footerLinks" />
 </template>
-
-<style>
-/* Add your styles here */
-</style>
