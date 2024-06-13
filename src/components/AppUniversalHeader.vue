@@ -11,22 +11,20 @@ export default {
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-12 py-2 d-flex flex-column flex-lg-row align-items-center">
-
+        <div class="col-md-8 col-12 py-2 d-flex flex-column flex-md-row align-items-center">
           <!-- INDIRIZZO E NUMERO DI TELEFONO HEADER -->
-
-          <div class="address mb-2 mb-lg-0">
+          <div class="address mb-2 mb-md-0">
             <span>
               <i class="fa-solid fa-location-dot map-location-icon"></i>
             </span>
             <span class="mx-3 custom-font-size">7087 Richmond hwy, Alexandria, VA</span>
           </div>
-          <div class="telephone-contact mx-0 mx-lg-5">
+          <div class="telephone-contact mx-0 mx-md-5">
             <span><i class="fa-solid fa-phone phone-icon"></i></span>
             <span class="mx-3 custom-font-size">800-2345-6789</span>
           </div>
         </div>
-        <div class="col-lg-4 col-12 d-flex align-items-center justify-content-center justify-content-lg-end">
+        <div class="col-md-4 col-12 d-flex align-items-center justify-content-center justify-content-md-end">
           <div class="social-icon-circle ">
             <a href=""><i class="fa-brands fa-facebook "></i></a>
             <a href=""><i class="fa-brands fa-twitter mx-4"></i></a>
@@ -37,6 +35,7 @@ export default {
     </div>
   </section>
 </template>
+
 
 
 <style lang="scss" scoped>
