@@ -1,18 +1,13 @@
 <script>
-
-//HEADER CONTACTS AND ABOUT
-
 export default {
     name: 'HeaderAboutContacts',
     data() {
         return {
-            logo: 'https://web.archive.org/web/20221227095619im_/https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2019/09/logo.png',
-
+            logo: 'https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2019/09/logo.png',
             navLinks: [
                 {
                     navItem: 'about',
-                    url: '/about',
-                    action: this.HandleAboutClick
+                    url: '/about'
                 },
                 {
                     navItem: 'services',
@@ -36,30 +31,31 @@ export default {
                 }
             ]
         }
-    },
-    methods: {
-        handleAboutClick() {
-            this.$emit('about-clicked');
-        }
     }
 }
-
 </script>
+
+
 
 <template>
     <section class="bg-header">
         <div class="container py-1">
             <header>
                 <div
-                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
+                    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
                     <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                         <img :src="logo" alt="logo">
                     </a>
 
                     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                         <li v-for="(link, index) in navLinks" :key="index">
-                            <a href="#" @click="link.navItem === 'about' ? link.action() : null"
-                                class="nav-link px-2 custom-nav-link">{{ link.navItem }}</a>
+
+                            <!--<router-link></router-link> per la navigazione tra i link-->
+                            <router-link v-if="link.url" :to="link.url" class="nav-link px-2 custom-nav-link">{{
+                                link.navItem }}</router-link>
+                            <a v-else href="#" class="nav-link px-2 custom-nav-link">{{ link.navItem }}</a>
+
+
                         </li>
                     </ul>
 
@@ -72,13 +68,15 @@ export default {
         <div class="col-12 py-3 bg-white">
             <div class="container">
                 <div class="d-flex">
-                    <div class="text-uppercase nav pr border-right ">home</div>
+                    <div class="text-uppercase nav pr border-right">home</div>
                     <div class="text-uppercase nav pl custom-active">lorem</div>
                 </div>
             </div>
         </div>
     </section>
 </template>
+
+
 
 <style lang="scss" scoped>
 @use 'src/assets/partials/mixin' as*;
