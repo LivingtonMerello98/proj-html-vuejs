@@ -71,9 +71,9 @@ export default {
                     <div class="service-item mb-5 py-3">
                         <div class="title mb-3">
                             <span class="custom-primary-color" v-html="service.icon"></span>
-                            <span class="sub-title-l mx-3" style="color: #222627;">{{ service.title }}</span>
+                            <span class="sub-title-l mx-3 py-2" style="color: #222627;">{{ service.title }}</span>
                         </div>
-                        <div class="text paragraph-thin m-1">
+                        <div class="text paragraph-thin py-2">
                             <p>{{ service.text }}</p>
                         </div>
                     </div>
