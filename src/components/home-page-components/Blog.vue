@@ -40,7 +40,7 @@ export default {
                 <div class="img-content">
                     <img :src="post.image" :alt="post.title" class="post-img mb-4">
                 </div>
-                <p class=" thin-font mb-4">{{ post.data }}</p>
+                <p class="thin-font mb-4">{{ post.data }}</p>
                 <h4 class="sub-title-s mb-4">{{ post.title }}</h4>
             </div>
             <div class="col-12 mb-5 text-center">
@@ -55,7 +55,7 @@ export default {
 @use 'src/assets/partials/variables' as*;
 
 .sub-title-s {
-    @include sub-title-s
+    @include sub-title-s;
 }
 
 .thin-font {
@@ -64,7 +64,7 @@ export default {
 }
 
 .title-section {
-    @include title-section
+    @include title-section;
 }
 
 .post-img {
@@ -73,10 +73,39 @@ export default {
     max-width: 500px;
     max-height: 500px;
     object-fit: cover;
-
 }
 
 .btn-primary-to-secondary {
-    @include btn-primary-to-secondary
+    @include btn-primary-to-secondary;
+}
+
+/* Media query per tablet (max-width: 991px) */
+@media (max-width: 991px) {
+    .title-section {
+        font-size: 2.5rem;
+    }
+
+    .sub-title-s {
+        font-size: 1.25rem; 
+    }
+
+    .thin-font {
+        font-size: 12px; 
+    }
+}
+
+/* Media query per dispositivi mobili (max-width: 576px) */
+@media (max-width: 576px) {
+    .title-section {
+        font-size: 2rem;
+    }
+
+    .sub-title-s {
+        font-size: 1rem;
+    }
+
+    .thin-font {
+        font-size: 11px; 
+    }
 }
 </style>

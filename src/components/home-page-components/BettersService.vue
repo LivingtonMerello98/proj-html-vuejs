@@ -2,7 +2,6 @@
 export default {
     name: 'BetterService'
 }
-
 </script>
 
 <template>
@@ -26,7 +25,6 @@ export default {
 @use 'src/assets/partials/mixin' as*;
 @use 'src/assets/partials/variables' as*;
 
-
 .bg-image {
     background-image: url('https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/bg5.jpg');
     background-repeat: no-repeat;
@@ -38,6 +36,14 @@ export default {
         line-height: 1.25;
         letter-spacing: 0.2rem;
 
+        /* Impostazioni per dispositivi più piccoli */
+        @media (max-width: 991px) {
+            font-size: 1.5rem; /* Riduce la dimensione del font su tablet e smartphone */
+        }
+
+        @media (max-width: 576px) {
+            font-size: 1.25rem; /* Riduce ulteriormente la dimensione sui dispositivi mobili */
+        }
     }
 
     .btn-primary-to-white {

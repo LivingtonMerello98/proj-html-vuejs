@@ -3,6 +3,10 @@
 
 QuickWind è un'applicazione web che fornisce informazioni e servizi per il noleggio di yacht, destinazioni per la navigazione e attività correlate. L'applicazione è sviluppata utilizzando Vue.js e strutturata in vari componenti e pagine per uno sviluppo modulare.
 
+## Preview
+
+![App Screenshot](./public/quickwind.png)
+
 # Struttura del progetto
 
 Di seguito è riportata una panoramica della struttura delle cartelle e dei file del progetto:
@@ -51,9 +55,33 @@ Di seguito è riportata una panoramica della struttura delle cartelle e dei file
     ├── package.json
     ├── README.md
     └── vite.config.js
-## Preview
 
-![App Screenshot](./public/quickwind.png)
+
+## Iniziare
+### Prerequisiti
+- Node.js (versione X.X.X o superiore)
+- npm (versione X.X.X o superiore) o yarn (versione X.X.X o superiore)
+
+### Installazione
+1. Clona il repository:
+    ```bash
+    git clone https://github.com/tuonomeutente/QuickWind.git
+    cd QuickWind
+    ```
+
+2. Installa le dipendenze:
+    ```bash
+    npm install
+    ```
+    oppure
+    ```bash
+    yarn install
+    ```
+
+### Avvio del Server di Sviluppo
+Avvia il server di sviluppo con:
+```bash
+npm run dev
 
 
 ## 🚀 About Me

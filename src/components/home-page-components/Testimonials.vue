@@ -48,16 +48,16 @@ export default {
                     </div>
                 </div>
                 <div class="col-12 d-flex py-3 flex-column align-items-center mb-5">
-                    <div class="card p-1 p-5 ">
-                        <div class="d-flex">
-                            <div class="col-3 py-2 d-flex justify-content-center align-items-center">
+                    <div class="card p-1 p-5">
+                        <div class="d-flex flex-column flex-md-row">
+                            <div class="col-12 col-md-3 py-2 d-flex justify-content-center align-items-center order-md-1">
                                 <div class="img-content d-flex justify-content-center align-items-center">
                                     <img :src="testimonials[currentIndex].profile" :alt="testimonials[currentIndex].sign"
                                         class="img-fluid img-size rounded-circle">
                                 </div>
                             </div>
 
-                            <div class="col py-2 d-flex justify-content-center align-items-center ">
+                            <div class="col py-2 d-flex justify-content-center align-items-center order-md-2">
                                 <div class="text-content">
                                     <p class="custom-paragraph">{{ testimonials[currentIndex].paragraph }}</p>
                                     <h3 class="custom-sign">{{ testimonials[currentIndex].sign }}</h3>
@@ -82,7 +82,7 @@ export default {
 }
 
 .title-s {
-    @include title-s
+    @include title-s;
 }
 
 .card {
@@ -106,5 +106,45 @@ export default {
 
 .img-size {
     max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    .custom-paragraph {
+        font-size: 14px; 
+    }
+
+    .custom-sign {
+        font-size: 14px; 
+    }
+
+    .title-s {
+        font-size: 2.5rem; 
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-paragraph {
+        font-size: 12px; 
+    }
+
+    .custom-sign {
+        font-size: 12px; 
+    }
+
+    .title-s {
+        font-size: 2rem; 
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .img-size {
+        max-width: 80%;
+    }
 }
 </style>

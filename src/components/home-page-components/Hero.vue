@@ -125,5 +125,71 @@ export default {
         background-color: #ffffff00;
     }
 }
+
+/* Media queries */
+@media (max-width: 768px) {
+    .bg-image {
+        .container {
+            padding: 1rem;
+        }
+
+        .custom-nav-link {
+            font-size: 12px;
+            padding: 15px 10px;
+        }
+
+        .nav {
+            justify-content: center;
+        }
+
+        .search-input {
+            width: 100%;
+            margin-top: 0.5rem;
+            font-size: 12px;
+        }
+
+        button {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-image {
+        .d-flex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .custom-nav-link {
+            padding: 10px 5px;
+            font-size: 10px;
+        }
+
+        .search-input {
+            width: 100%;
+            font-size: 10px;
+        }
+
+        .title-l {
+            font-size: 1.5rem;
+        }
+
+        .font-custom {
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .btn-border-to-white {
+            font-size: 0.8rem;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+        }
+    }
+}
 </style>
+
   
