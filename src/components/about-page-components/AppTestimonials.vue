@@ -21,20 +21,20 @@ export default {
   },
 };
 </script>
+
 <template>
   <section>
     <h2 class="text-center py-5">Testimonials</h2>
     <div class="container">
-      <div class="col-12  mb-5" style="background-color: rgba(0, 0, 0, 0.037);">
-        <div class="col-1" style="height: 1px; background-color:#6EC1E4; margin: 0 auto;">
-        </div>
+      <div class="col-12 mb-5" style="background-color: rgba(0, 0, 0, 0.037);">
+        <div class="col-1" style="height: 1px; background-color: #6ec1e4; margin: 0 auto;"></div>
       </div>
       <div class="row">
-        <div class="col-md-6 d-flex " v-for="testimonial in testimonials">
+        <div class="col-md-6 d-flex flex-column flex-md-row align-items-center" v-for="testimonial in testimonials">
           <div class="card-testimonial">
             <img :src="testimonial.url" alt="" class="img-testimonial" />
           </div>
-          <div class="info-testimonials mb-5 px-4">
+          <div class="info-testimonials mb-5 px-4 text-center text-md-left">
             <span class="role-testimonial">{{ testimonial.role }}</span>
             <p class="mb-3">
               <span>{{ testimonial.desc }}</span>
@@ -58,6 +58,7 @@ export default {
 @use "src/assets/partials/mixin" as *;
 @use "src/assets/partials/variables" as *;
 
+/* Stile desktop invariato */
 .button-view-all {
   @include btn-primary-to-secondary;
 }
@@ -79,5 +80,61 @@ h2 {
 
 .img-testimonial {
   max-height: 300px;
+}
+
+/* Media query per tablet e mobile */
+@media (max-width: 991px) {
+  /* Layout tablet */
+  .info-testimonials {
+    text-align: center; /* Centra il testo per tablet */
+  }
+
+  .role-testimonial {
+    font-size: 16px; /* Ridimensiona i titoli */
+  }
+
+  .name-testimonial {
+    font-size: 16px; /* Ridimensiona i nomi */
+  }
+
+  p {
+    font-size: 14px; /* Ridimensiona i paragrafi */
+  }
+
+  .img-testimonial {
+    max-height: 200px; /* Ridimensiona l'immagine */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Layout mobile */
+  .col-md-6 {
+    flex-direction: column; /* Impila immagine e testo */
+    text-align: center; /* Centra tutto */
+  }
+
+  .card-testimonial {
+    margin-bottom: 20px; /* Spaziatura tra immagine e testo */
+  }
+
+  h2 {
+    font-size: 24px; /* Ridimensiona titolo sezione */
+  }
+
+  .role-testimonial {
+    font-size: 16px; /* Ulteriore ridimensionamento per mobile */
+  }
+
+  .name-testimonial {
+    font-size: 16px; /* Ridimensiona i nomi */
+  }
+
+  p {
+    font-size: 14px; /* Ridimensiona paragrafi */
+  }
+
+  .img-testimonial {
+    max-height: 150px; /* Ridimensiona ulteriormente immagine */
+  }
 }
 </style>

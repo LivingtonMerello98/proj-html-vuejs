@@ -15,33 +15,28 @@ export default {
     <footer class="color-share">
         <div class="container py-5">
             <div class="row mb-5 py-5">
-
-                <div class="col-md-4 col-4 mb-4 mb-md-0  d-flex align-items-center ">
-
+                <!-- Logo e slogan -->
+                <div class="col-md-4 col-12 mb-4 mb-md-0 d-flex align-items-center">
                     <div class="logo-slogan">
                         <img src="https://ld-wp73.template-help.com/wordpress/prod_5291/v1/wp-content/uploads/2020/12/logo.png"
                             alt="" class="img-fluid">
                         <p class="fs-">Yacht rentals for people who love <br> sailing across the seas…</p>
                     </div>
-
                 </div>
 
-                <div class="col-md-4 col-4 mb-4 mb-md-0">
+                <!-- Link di navigazione -->
+                <div class="col-md-4 col-12 mb-4 mb-md-0">
                     <div class="row">
                         <div class="col-6">
                             <ul>
-                                <!--slice prende in considerazione dall oggetto 0 all oggetto 3-->
-                                <li class="mb-3 custom-font-size" v-for="(link, index) in links.slice(0, 3)" :key="index"
-                                    :href="link.url">
+                                <li class="mb-3 custom-font-size" v-for="(link, index) in links.slice(0, 3)" :key="index" :href="link.url">
                                     {{ link.label }}
                                 </li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul>
-                                <!--slice prende in considerazione dall oggetto 0 all oggetto 3-->
-                                <li class="mb-3 custom-font-size" v-for="(link, index) in links.slice(3, 6)" :key="index"
-                                    :href="link.url">
+                                <li class="mb-3 custom-font-size" v-for="(link, index) in links.slice(3, 6)" :key="index" :href="link.url">
                                     {{ link.label }}
                                 </li>
                             </ul>
@@ -49,25 +44,25 @@ export default {
                     </div>
                 </div>
 
+                <!-- Iscrizione alla newsletter -->
                 <div class="col-md-4 col-12 text-md-left newsletter">
                     <h2 class="form-title mb-3">Newsletter</h2>
                     <form class="form-inline">
-                        <div class="form-group mb- d-flex">
-                            <input type="email" v-model="email" class="form-control" placeholder="Enter your e-mail"
-                                required>
+                        <div class="form-group mb-0 d-flex">
+                            <input type="email" v-model="email" class="form-control" placeholder="Enter your e-mail" required>
                             <button type="submit" class="btn-primary-to-secondary fw-bold">Subscribe</button>
                         </div>
                     </form>
                 </div>
-
             </div>
         </div>
+        
+        <!-- Footer bottom -->
         <section class="bt-footer py-3">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-12 d-flex justify-content-md-start py-1">
-                        <p class="text-white mr-md-2 ">&copy; Zemez. <span style="color: rgb(134, 132, 132);"> All rights
-                                reserved.</span></p>
+                        <p class="text-white mr-md-2 ">&copy; Zemez. <span style="color: rgb(134, 132, 132);"> All rights reserved.</span></p>
                         <p class="text-white mx-2 mr-md-2"> | Privacy Policy</p>
                         <p class="text-white mr-md-2"> | Terms of Use</p>
                     </div>
@@ -103,7 +98,6 @@ a {
     background-color: #222627;
 }
 
-
 .newsletter input {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -129,5 +123,60 @@ p {
     font-size: 12px;
     text-transform: uppercase;
     line-height: 1.2em;
+}
+
+/* Media query per tablet e mobile */
+@media (max-width: 991px) {
+    .logo-slogan p {
+        font-size: 14px; /* Ridotto per tablet */
+    }
+
+    .custom-font-size {
+        font-size: 14px; /* Ridotto per tablet */
+    }
+
+    .form-title {
+        font-size: 22px; /* Ridotto per tablet */
+    }
+
+    .newsletter input {
+        width: 100%; /* La casella di input occupa tutto lo spazio disponibile */
+        margin-bottom: 10px;
+    }
+
+    .btn-primary-to-secondary {
+        width: 100%; /* Il bottone occupa tutto lo spazio disponibile */
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-slogan p {
+        font-size: 12px; /* Ulteriore riduzione per mobile */
+    }
+
+    .custom-font-size {
+        font-size: 12px; /* Ulteriore riduzione per mobile */
+    }
+
+    .form-title {
+        font-size: 20px; /* Ulteriore riduzione per mobile */
+    }
+
+    .newsletter input {
+        width: 100%; /* La casella di input occupa tutto lo spazio disponibile */
+    }
+
+    .btn-primary-to-secondary {
+        width: 100%; /* Il bottone occupa tutto lo spazio disponibile */
+    }
+
+    /* Disposizione delle colonne in una singola colonna per mobile */
+    .col-md-4 {
+        max-width: 100%;
+    }
+
+    .bt-footer {
+        text-align: center;
+    }
 }
 </style>

@@ -70,14 +70,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use 'src/assets/partials/mixin' as*;
-@use 'src/assets/partials/variables' as*;
-
-
+@use 'src/assets/partials/variables' as *;
 
 h2 {
     font-weight: bold;
-    font-size: $custom-title-section-size
+    font-size: $custom-title-section-size;
+
+    @media (max-width: 768px) { // Per tablet
+        font-size: 19px; 
+    }
+
+    @media (max-width: 576px) { // Per mobile
+        font-size: 18px;
+    }
 }
 
 .img-content {
@@ -102,6 +107,14 @@ h2 {
     .hover-text {
         color: white;
         font-size: 20px;
+
+        @media (max-width: 768px) { // Per tablet
+            font-size: 16px;
+        }
+
+        @media (max-width: 576px) { // Per mobile
+            font-size: 14px; // Limite minimo
+        }
     }
 }
 
@@ -111,6 +124,14 @@ h2 {
 
 .icon-custom-primary-color {
     color: $custom-primary-color;
-    font-size: $custom-title-m ;
+    font-size: $custom-title-m;
+
+    @media (max-width: 768px) { // Per tablet
+        font-size: 18px;
+    }
+
+    @media (max-width: 576px) { // Per mobile
+        font-size: 16px;
+    }
 }
 </style>
